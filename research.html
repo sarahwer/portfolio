@@ -7,15 +7,15 @@
 <meta name="description" content="Wake-up receivers, low-noise amplifier design and publications.">
 <meta name="author" content="Sarah Ouerghemmi">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/research.html">
-<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/research.html">
-<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/research.html">
+<link rel="alternate" hreflang="en" href="https://sarahwer.github.io/portfolio/research.html">
+<link rel="alternate" hreflang="de" href="https://sarahwer.github.io/portfolio/de/research.html">
+<link rel="alternate" hreflang="x-default" href="https://sarahwer.github.io/portfolio/research.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:title" content="Research — Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:description" content="Wake-up receivers, low-noise amplifier design and publications.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/research.html">
-<meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
+<meta property="og:url" content="https://sarahwer.github.io/portfolio/research.html">
+<meta property="og:image" content="https://sarahwer.github.io/portfolio/img/portrait.jpg">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,6 +113,16 @@ strong{font-weight:500}
   object-fit:cover;object-position:50% 45%;border:1px solid var(--rule);display:block}
 .intro-body{flex:1 1 20rem;min-width:0}
 
+
+/* board gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+  gap:1.75rem 1.5rem;max-width:50rem;margin:1.25rem 0 0}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:auto;display:block;border-radius:.2rem;
+  background:var(--bg-alt);border:1px solid var(--rule)}
+.gallery figcaption{margin-top:.5rem;font-size:.88rem;color:var(--text-soft)}
+.gallery figcaption strong{display:block;color:var(--text);font-weight:500}
+.gallery .wide{grid-column:1 / -1;max-width:34rem}
 
 /* home figure */
 .figure{margin:3rem 0 0}
@@ -240,7 +250,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
 <div class="layout">
   <nav class="sidenav" id="sidenav" aria-label="On this page">
     <p>On this page</p>
-    <ul class="sections"><li><a href="#overview">Overview</a></li><li><a href="#topics">Topics</a></li><li><a href="#publications">Publications</a></li><li><a href="#teaching">Teaching</a></li></ul>
+    <ul class="sections"><li><a href="#overview">Overview</a></li><li><a href="#topics">Topics</a></li><li><a href="#hardware">Hardware</a></li><li><a href="#publications">Publications</a></li><li><a href="#teaching">Teaching</a></li></ul>
   </nav>
   <main>
 
@@ -291,6 +301,34 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
         <li>Protocol and scenario work on MSP430-based nodes</li>
       </ul>
     </section>
+
+    <section id="hardware">
+      <h2>Hardware</h2>
+      <p>A few of the boards behind the work above. Each one went from schematic and layout to a built prototype measured on the bench.</p>
+      <div class="gallery">
+        <figure>
+          <img src="img/board-433-front-end.webp" alt="Green printed circuit board of a 433 MHz wake-up receiver front end with SMA connector" loading="lazy" width="900" height="627">
+          <figcaption><strong>433 MHz front end, V1 (2026)</strong>Wake-up receiver front end: LNA, matching network and filters on one board, with an SMA input and U.FL taps for probing each stage separately.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/board-868-wurx.webp" alt="Blue printed circuit board of an 868 MHz wake-up receiver" loading="lazy" width="435" height="292">
+          <figcaption><strong>868 MHz receiver board, V2 (2025)</strong>Wake-up receiver with the radio module, the amplifier chain and the microcontroller on a single board.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/board-dual-lna.webp" alt="Green test board with two amplifier stages and three SMA connectors" loading="lazy" width="900" height="511">
+          <figcaption><strong>Dual-stage LNA test board</strong>Two cascaded amplifier stages with jumper-selectable bias, built to measure gain, noise figure and current draw against the simulation.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/board-fube-node.webp" alt="Small green sensor node board with an antenna attached" loading="lazy" width="433" height="577">
+          <figcaption><strong>FUBE node, V3 (2025)</strong>Sensor node for the FUBE project, with the antenna fitted.</figcaption>
+        </figure>
+        <figure class="wide">
+          <img src="img/node-battery.webp" alt="Sensor node with antenna connected to a battery holder" loading="lazy" width="900" height="1199">
+          <figcaption><strong>The node running on batteries</strong>The complete receiver working standalone from a battery pack — the point of the whole exercise, since a node that needs mains power is not a sensor node.</figcaption>
+        </figure>
+      </div>
+    </section>
+
 
     <section id="publications">
       <h2>Publications</h2>
