@@ -7,15 +7,15 @@
 <meta name="description" content="Sarah Ouerghemmi — Ingenieurin für Hochfrequenz- und Embedded-Hardware in Leipzig, Wake-up-Empfänger und energiesparende Funk-Frontends.">
 <meta name="author" content="Sarah Ouerghemmi">
 <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/">
-<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/">
-<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/">
+<link rel="alternate" hreflang="en" href="https://sarahwer.github.io/portfolio/">
+<link rel="alternate" hreflang="de" href="https://sarahwer.github.io/portfolio/de/">
+<link rel="alternate" hreflang="x-default" href="https://sarahwer.github.io/portfolio/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:title" content="Start — Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:description" content="Sarah Ouerghemmi — Ingenieurin für Hochfrequenz- und Embedded-Hardware in Leipzig, Wake-up-Empfänger und energiesparende Funk-Frontends.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/de/">
-<meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
+<meta property="og:url" content="https://sarahwer.github.io/portfolio/de/">
+<meta property="og:image" content="https://sarahwer.github.io/portfolio/img/portrait.jpg">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,6 +113,88 @@ strong{font-weight:500}
   object-fit:cover;object-position:50% 45%;border:1px solid var(--rule);display:block}
 .intro-body{flex:1 1 20rem;min-width:0}
 
+
+
+/* ---------- home hero ---------- */
+.layout.plain{padding:0;max-width:none;display:flex;flex-direction:column}
+.layout.plain main{padding-bottom:0;display:flex;flex-direction:column;flex:1 0 auto}
+.layout.plain main > section{display:flex;flex-direction:column;flex:1 0 auto}
+/* any leftover window height is taken by the dark band, not by white space */
+.hero-band{flex:1 0 auto;display:flex;flex-direction:column;justify-content:center}
+.bleed{margin-left:calc(50% - 50vw);width:100vw}
+.hero-band{background:linear-gradient(150deg,#0d2d33 0%,#09191d 60%,#0b2228 100%);
+  color:#e9f4f4;padding:3rem 0 3.25rem}
+.hero-inner{max-width:66rem;margin:0 auto;padding:0 1.5rem;
+  display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:2.75rem;align-items:start}
+.eyebrow{margin:0 0 .75rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
+.hero-band h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.15;font-weight:400;
+  margin:0 0 1.1rem;color:#fff}
+.hero-band h1 span{color:#4fd0c8}
+.hero-lede{color:#b9d1d3;font-size:1rem;max-width:40rem;margin:0}
+.hero-rule{border:0;border-top:1px solid rgba(255,255,255,.14);margin:1.6rem 0}
+.hero-label{margin:0 0 .6rem;font-size:.73rem;letter-spacing:.18em;text-transform:uppercase;color:#79cfc9}
+.iam{list-style:disc;margin:0 0 1.6rem;padding-left:1.15rem;max-width:42rem}
+.iam li{margin-bottom:.35rem;color:#dbe9ea;font-size:.95rem}
+.iam a{color:#4fd0c8}
+.iam a:hover{text-decoration:underline}
+.topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;
+  max-width:42rem;margin:0 0 1.6rem}
+.topics span{border:1px solid rgba(255,255,255,.16);border-radius:.25rem;
+  padding:.65rem .85rem;font-size:.92rem;color:#dbe9ea}
+.hero-links{margin:0 0 1.25rem;font-size:.92rem;color:#8fb6b8;line-height:1.8}
+.hero-links a{color:#4fd0c8}
+.hero-links a:hover{text-decoration:underline}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:0}
+.hbtn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.05rem;
+  border:1px solid rgba(255,255,255,.22);border-radius:.25rem;
+  color:#e9f4f4;font-size:.92rem}
+.hbtn:hover{border-color:#4fd0c8;color:#4fd0c8;text-decoration:none}
+.hbtn.solid{background:#2ec4b6;border-color:#2ec4b6;color:#08201f;font-weight:500}
+.hbtn.solid:hover{background:#4fd0c8;border-color:#4fd0c8;color:#08201f}
+
+.hero-figure-wrap{max-width:66rem;margin:2.75rem auto 0;padding:0 1.5rem}
+.hero-figure-wrap img{width:100%;height:auto;display:block;border-radius:.3rem;
+  border:1px solid rgba(255,255,255,.12)}
+.portrait-card{margin:0;border:1px solid rgba(255,255,255,.18);border-radius:.3rem;
+  padding:.5rem;background:rgba(255,255,255,.03)}
+.portrait-card img{width:100%;height:auto;display:block;border-radius:.2rem}
+.portrait-card figcaption{margin-top:.5rem;padding:.5rem;text-align:center;
+  border:1px solid rgba(255,255,255,.16);border-radius:.2rem;
+  font-size:.74rem;letter-spacing:.06em;color:#a9c9ca}
+
+/* ---------- capability strip ---------- */
+.capstrip{background:var(--bg-alt);border-bottom:0}
+.cap-inner{max-width:66rem;margin:0 auto;padding:1.9rem 1.5rem;
+  display:grid;grid-template-columns:repeat(6,1fr)}
+.cap{text-align:center;padding:0 .5rem;border-left:1px solid var(--rule)}
+.cap:first-child{border-left:0}
+.cap svg{width:2rem;height:2rem;stroke:var(--accent);fill:none;stroke-width:1.5;
+  stroke-linecap:round;stroke-linejoin:round;margin-bottom:.55rem}
+.cap p{margin:0;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--text-soft);max-width:none}
+
+@media (max-width:860px){
+  .hero-inner{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .portrait-card{max-width:15rem}
+  .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
+  .cap:nth-child(4){border-left:0}
+}
+@media (max-width:560px){
+  .topics{grid-template-columns:minmax(0,1fr)}
+  .cap-inner{grid-template-columns:repeat(2,1fr)}
+  .cap:nth-child(odd){border-left:0}
+  .cap:nth-child(4){border-left:1px solid var(--rule)}
+}
+
+/* board gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+  gap:1.75rem 1.5rem;max-width:50rem;margin:1.25rem 0 0}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:auto;display:block;border-radius:.2rem;
+  background:var(--bg-alt);border:1px solid var(--rule)}
+.gallery figcaption{margin-top:.5rem;font-size:.88rem;color:var(--text-soft)}
+.gallery figcaption strong{display:block;color:var(--text);font-weight:500}
+.gallery .wide{grid-column:1 / -1;max-width:34rem}
 
 /* home figure */
 .figure{margin:3rem 0 0}
@@ -242,89 +324,80 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
   <main>
 
     <section id="welcome">
-      <h1>Willkommen auf meiner Homepage!</h1>
-      <div class="hero">
-        <div>
-          <p>Hallo, ich heiße Sarah und ich bin</p>
-          <ul>
-            <li>Wissenschaftliche Mitarbeiterin an der <a href="https://www.htwk-leipzig.de/" target="_blank" rel="noopener">HTWK Leipzig</a></li>
-            <li>Doktorin der Ingenieurwissenschaften (Dr.-Ing.) der HTWK Leipzig und der <a href="http://www.enetcom.rnu.tn/" target="_blank" rel="noopener">ENET'COM Sfax</a></li>
-            <li>Ingenieurin für Hochfrequenz- und Embedded-Hardware</li>
-            <li>Mitglied des IEEE</li>
-          </ul>
+      <div class="bleed hero-band">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Ingenieurin f&uuml;r HF- und Embedded-Hardware</p>
+            <h1>Hallo, ich bin <span>Sarah Ouerghemmi</span></h1>
+            <p class="hero-lede">Ich bin promovierte Ingenieurin (Dr.-Ing.) f&uuml;r Hochfrequenz- und Embedded-Hardware in Leipzig. Ich entwickle energiesparende Funksysteme &ndash; von der HF-Schaltung bis zum Sensorknoten, den sie aufweckt.</p>
 
-          <h2>Meine Forschungsthemen sind</h2>
-          <ul>
-            <li>Wake-up-Empfänger</li>
-            <li>Drahtlose Sensornetzwerke</li>
-            <li>Entwurf rauscharmer Verstärker (LNA)</li>
-            <li>Ultra-Low-Power-HF- und Embedded-Systeme</li>
-          </ul>
+            <hr class="hero-rule">
 
-          <p class="hero-links">
-            Leipzig, Deutschland<br>
-            <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a>
-          </p>
-          <p>
-            <a class="btn" href="../CV_Sarah_Ouerghemmi_DE.pdf">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3zM5 18h14v2H5z"/></svg>
-              Lebenslauf als PDF</a>
-            <a class="btn ghost" href="../CV_Sarah_Ouerghemmi_EN.pdf" hreflang="en">CV in English</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/dr-ing-sarah-ouerghemmi-baa91950" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn ghost" href="https://scholar.google.com/citations?user=42Q1LtEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-            <a class="btn ghost" href="https://www.researchgate.net/profile/Sarah-Ouerghemmi" target="_blank" rel="noopener">ResearchGate</a>
-          </p>
+            <p class="hero-label">Ich bin</p>
+            <ul class="iam">
+              <li>Wissenschaftliche Mitarbeiterin an der <a href="https://www.htwk-leipzig.de/" target="_blank" rel="noopener">HTWK Leipzig</a></li>
+              <li>Doktorin der Ingenieurwissenschaften (Dr.-Ing.) der HTWK Leipzig und der <a href="http://www.enetcom.rnu.tn/" target="_blank" rel="noopener">ENET&rsquo;COM Sfax</a></li>
+              <li>Ingenieurin f&uuml;r Hochfrequenz- und Embedded-Hardware</li>
+              <li>Mitglied des IEEE</li>
+            </ul>
+
+            <p class="hero-label">Meine Forschungsthemen sind</p>
+            <div class="topics">
+              <span>Wake-up-Empf&auml;nger</span><span>Drahtlose Sensornetzwerke</span><span>Entwurf rauscharmer Verst&auml;rker</span><span>Ultra-Low-Power-HF- und Embedded-Systeme</span>
+            </div>
+
+            <p class="hero-links">Leipzig, Deutschland<br>
+              <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a></p>
+
+            <p class="hero-actions">
+              <a class="hbtn solid" href="../CV_Sarah_Ouerghemmi_DE.pdf">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3zM5 18h14v2H5z"/></svg>
+                Lebenslauf als PDF</a>
+              <a class="hbtn" href="../CV_Sarah_Ouerghemmi_EN.pdf" hreflang="en">CV in English</a>
+              <a class="hbtn" href="projects.html">Projekte</a>
+              <a class="hbtn" href="research.html">Forschung</a>
+            </p>
+          </div>
+
+          <figure class="portrait-card">
+            <img src="../img/portrait.jpg" alt="Portrait von Sarah Ouerghemmi" width="520" height="520" fetchpriority="high">
+            <figcaption>Dr.-Ing. &middot; Forscherin &middot; IEEE</figcaption>
+          </figure>
         </div>
-        <img class="hero-photo" src="../img/portrait.jpg" alt="Portrait von Sarah Ouerghemmi">
+
+        <div class="hero-figure-wrap">
+          <img src="../img/hero-overview.webp" width="1600" height="806" loading="lazy"
+               alt="Signalweg: Ein Funksignal gelangt in einen rauscharmen Verstärker, dann in einen Wake-up-Empfänger, der den Mikrocontroller eines Knotens im drahtlosen Sensornetzwerk weckt. Darunter: Konzept, Simulation, Layout und Messung.">
+        </div>
       </div>
 
-      <div class="figure">
-        <svg viewBox="0 0 1000 430" role="img" aria-labelledby="figtitle">
-          <title id="figtitle">Überblick der Kompetenzen: der Entwicklungszyklus von Konzept über Simulation und Layout bis zur Messung, mit Fachgebieten und Werkzeugen.</title>
-          <defs><marker id="fa" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-            <path d="M1 1L8 5L1 9" fill="none" stroke="context-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
-
-          <polygon class="fig-band" points="30,60 268,60 300,86 268,112 30,112"/>
-          <text class="fig-on-band" x="52" y="92">HF-Frontends</text>
-          <polygon class="fig-band" points="30,130 268,130 300,156 268,182 30,182"/>
-          <text class="fig-on-band" x="52" y="162">Embedded-Systeme</text>
-          <polygon class="fig-band" points="30,200 268,200 300,226 268,252 30,252"/>
-          <text class="fig-on-band" x="52" y="232">Drahtlose Sensornetzwerke</text>
-
-          <polygon class="fig-band-2" points="970,60 732,60 700,86 732,112 970,112"/>
-          <text class="fig-on-band" x="948" y="92" text-anchor="end">ADS &#183; Altium &#183; Fusion 360</text>
-          <polygon class="fig-band-2" points="970,130 732,130 700,156 732,182 970,182"/>
-          <text class="fig-on-band" x="948" y="162" text-anchor="end">Publikationen &amp; Lehre</text>
-          <polygon class="fig-band-2" points="970,200 732,200 700,226 732,252 970,252"/>
-          <text class="fig-on-band" x="948" y="232" text-anchor="end">Geförderte Verbünde</text>
-
-          <circle class="fig-ring" cx="500" cy="175" r="120"/>
-          <path class="fig-arr" d="M560 71 A 120 120 0 0 1 604 115" marker-end="url(#fa)"/>
-          <path class="fig-arr" d="M604 235 A 120 120 0 0 1 560 279" marker-end="url(#fa)"/>
-          <path class="fig-arr" d="M440 279 A 120 120 0 0 1 396 235" marker-end="url(#fa)"/>
-          <path class="fig-arr" d="M396 115 A 120 120 0 0 1 440 71" marker-end="url(#fa)"/>
-
-          <circle class="fig-core" cx="500" cy="175" r="60"/>
-          <text class="fig-core-t" x="500" y="162" text-anchor="middle">Wake-up-</text>
-          <text class="fig-core-t" x="500" y="182" text-anchor="middle">Empfänger-</text>
-          <text class="fig-core-t" x="500" y="202" text-anchor="middle">Frontend</text>
-
-          <rect class="fig-node" x="435" y="33" width="130" height="44" rx="8"/>
-          <text class="fig-node-t" x="500" y="61" text-anchor="middle">Konzept</text>
-          <rect class="fig-node" x="555" y="153" width="130" height="44" rx="8"/>
-          <text class="fig-node-t" x="620" y="181" text-anchor="middle">Simulation</text>
-          <rect class="fig-node" x="435" y="273" width="130" height="44" rx="8"/>
-          <text class="fig-node-t" x="500" y="301" text-anchor="middle">Messung</text>
-          <rect class="fig-node" x="315" y="153" width="130" height="44" rx="8"/>
-          <text class="fig-node-t" x="380" y="181" text-anchor="middle">Layout</text>
-
-          <rect class="fig-pill" x="75" y="350" width="250" height="46" rx="23"/>
-          <text class="fig-pill-t" x="200" y="378" text-anchor="middle">433 &amp; 868 MHz</text>
-          <rect class="fig-pill" x="375" y="350" width="250" height="46" rx="23"/>
-          <text class="fig-pill-t" x="500" y="378" text-anchor="middle">Unter 10 &#181;W</text>
-          <rect class="fig-pill" x="675" y="350" width="250" height="46" rx="23"/>
-          <text class="fig-pill-t" x="800" y="378" text-anchor="middle">Konzept bis Prototyp</text>
-        </svg>
+      <div class="bleed capstrip">
+        <div class="cap-inner">
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.2"/><path d="M7.5 7.5a6.4 6.4 0 0 0 0 9M16.5 7.5a6.4 6.4 0 0 1 0 9M4.6 4.6a10.5 10.5 0 0 0 0 14.8M19.4 4.6a10.5 10.5 0 0 1 0 14.8"/></svg>
+            <p>Hochfrequenztechnik</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10" y="10" width="4" height="4"/><path d="M10 7V4M14 7V4M10 17v3M14 17v3M7 10H4M7 14H4M17 10h3M17 14h3"/></svg>
+            <p>Embedded-Systeme</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="14" height="8" rx="2"/><path d="M20 11v2M6 12h5"/></svg>
+            <p>Energieeffizienz</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M10.5 6.8 6.4 15.9M13.5 6.8l4.1 9.1M7.2 18h9.6"/></svg>
+            <p>Drahtlose Sensornetzwerke</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5 2.5 9.5 12 14l9.5-4.5z"/><path d="M6 11.5V17c0 1.4 2.7 2.6 6 2.6s6-1.2 6-2.6v-5.5M21.5 9.5V16"/></svg>
+            <p>Promotion Dr.-Ing.</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 21.2 12 12 21.2 2.8 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            <p>IEEE-Mitglied</p>
+          </div>
+        </div>
       </div>
     </section>
 
