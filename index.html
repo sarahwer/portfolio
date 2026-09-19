@@ -7,15 +7,15 @@
 <meta name="description" content="Sarah Ouerghemmi — RF and embedded hardware engineer in Leipzig, working on wake-up receivers and ultra-low-power radio front ends.">
 <meta name="author" content="Sarah Ouerghemmi">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/">
-<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/">
-<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/">
+<link rel="alternate" hreflang="en" href="https://sarahwer.github.io/portfolio/">
+<link rel="alternate" hreflang="de" href="https://sarahwer.github.io/portfolio/de/">
+<link rel="alternate" hreflang="x-default" href="https://sarahwer.github.io/portfolio/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:title" content="Home — Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:description" content="Sarah Ouerghemmi — RF and embedded hardware engineer in Leipzig, working on wake-up receivers and ultra-low-power radio front ends.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/">
-<meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
+<meta property="og:url" content="https://sarahwer.github.io/portfolio/">
+<meta property="og:image" content="https://sarahwer.github.io/portfolio/img/portrait.jpg">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,6 +114,78 @@ strong{font-weight:500}
 .intro-body{flex:1 1 20rem;min-width:0}
 
 
+
+/* ---------- home hero ---------- */
+.layout.plain{padding-top:0;padding-left:0;padding-right:0;max-width:none}
+.bleed{margin-left:calc(50% - 50vw);width:100vw}
+.hero-band{background:linear-gradient(145deg,#0d2d33 0%,#09191d 55%,#0b2228 100%);
+  color:#e9f4f4;padding:0}
+/* two equal halves across the full window; the picture runs to the right edge */
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0}
+.hero-copy{padding:3.5rem 2.5rem 3.5rem max(1.5rem, calc(50vw - 33rem))}
+.hero-links{margin:1.5rem 0 0;font-size:.9rem;color:#8fb6b8}
+.hero-links a{color:#a7cfd0;border-bottom:1px solid rgba(167,207,208,.35)}
+.hero-links a:hover{color:#4fd0c8;border-bottom-color:#4fd0c8;text-decoration:none}
+.eyebrow{margin:0 0 .9rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
+.hero-band h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.12;font-weight:500;margin:0 0 1.25rem;color:#fff}
+.hero-band h1 span{display:block;color:#4fd0c8}
+.hero-lede{color:#b9d1d3;font-size:1.02rem;max-width:30rem;margin:0 0 1.75rem}
+.hero-btn{display:inline-flex;align-items:center;gap:.7rem;padding:.7rem 1.4rem;
+  border:1px solid #4fd0c8;border-radius:2rem;color:#4fd0c8;
+  font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.hero-btn:hover{background:rgba(79,208,200,.14);text-decoration:none}
+.hero-figure{margin:0;align-self:stretch;display:flex;align-items:center;
+  padding:1.5rem 0;min-width:0}
+.hero-figure img{width:100%;height:auto;max-height:30rem;object-fit:contain;display:block}
+.hero-figure figcaption{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:0;
+  font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:#8fb6b8}
+.chips span{padding:.3rem .7rem;border:1px solid rgba(255,255,255,.18);border-radius:1rem}
+.chips i{font-style:normal;color:#4fd0c8}
+
+/* ---------- capability strip ---------- */
+.capstrip{background:var(--bg-alt);border-bottom:1px solid var(--rule)}
+.layout.plain main{padding-bottom:0}
+.cap-inner{max-width:64rem;margin:0 auto;padding:1.9rem 1.5rem;
+  display:grid;grid-template-columns:repeat(6,1fr)}
+.cap{text-align:center;padding:0 .5rem;border-left:1px solid var(--rule)}
+.cap:first-child{border-left:0}
+.cap svg{width:2rem;height:2rem;stroke:var(--accent);fill:none;stroke-width:1.5;
+  stroke-linecap:round;stroke-linejoin:round;margin-bottom:.55rem}
+.cap p{margin:0;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--text-soft);max-width:none}
+
+/* ---------- about ---------- */
+.about{max-width:38rem;margin:0 auto;padding:3.5rem 1.5rem 0;text-align:center}
+.about img{width:9.5rem;height:9.5rem;border-radius:50%;object-fit:cover;object-position:50% 45%;
+  border:1px solid var(--rule);display:block;margin:0 auto 1.4rem}
+.about h2{border:0;padding:0;margin:0 0 1rem;font-size:1.35rem}
+.about p{margin-left:auto;margin-right:auto}
+.about .btn{margin:.3rem .25rem}
+.about-meta{font-size:.92rem;color:var(--text-soft)}
+
+@media (max-width:860px){
+  .hero-inner{grid-template-columns:minmax(0,1fr)}
+  .hero-copy{padding:2.75rem 1.5rem 1.5rem}
+  .hero-figure{padding:0 0 2.5rem}
+  .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
+  .cap:nth-child(4){border-left:0}
+}
+@media (max-width:520px){
+  .cap-inner{grid-template-columns:repeat(2,1fr)}
+  .cap:nth-child(odd){border-left:0}
+  .cap:nth-child(4){border-left:1px solid var(--rule)}
+}
+
+/* board gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+  gap:1.75rem 1.5rem;max-width:50rem;margin:1.25rem 0 0}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:auto;display:block;border-radius:.2rem;
+  background:var(--bg-alt);border:1px solid var(--rule)}
+.gallery figcaption{margin-top:.5rem;font-size:.88rem;color:var(--text-soft)}
+.gallery figcaption strong{display:block;color:var(--text);font-weight:500}
+.gallery .wide{grid-column:1 / -1;max-width:34rem}
+
 /* home figure */
 .figure{margin:3rem 0 0}
 .figure svg{width:100%;height:auto;display:block}
@@ -211,49 +283,6 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
   .skills th{border-bottom:0}
 }
 @media (prefers-reduced-motion:reduce){.sidenav{transition:none}}
-
-/* Modern engineering homepage */
-.home-modern{padding:.5rem 0 1rem}
-.modern-intro{display:grid;grid-template-columns:minmax(0,1fr) 12rem;gap:2.2rem;align-items:start}
-.intro-copy{min-width:0}
-.eyebrow{margin:0 0 .55rem;color:var(--accent);font-size:.76rem;font-weight:700;letter-spacing:.16em}
-.home-modern h1{font-size:clamp(2.4rem,5vw,4rem);line-height:1.04;letter-spacing:-.035em;margin:0 0 .8rem;font-weight:400}
-.home-modern h1 span{color:var(--accent)}
-.modern-lead{max-width:48rem;font-size:1.12rem;line-height:1.58;color:var(--text-soft);margin-bottom:1.35rem}
-.intro-profile{border-top:1px solid var(--rule);padding-top:1rem}
-.section-label{margin:0 0 .4rem!important;font-size:.78rem!important;color:var(--text-soft)!important;text-transform:uppercase;letter-spacing:.11em}
-.intro-profile ul{margin:0;padding-left:1.1rem;max-width:48rem}
-.intro-profile li{margin-bottom:.2rem}
-.research-focus{margin-top:1.25rem}
-.focus-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem .6rem;margin-top:.55rem;max-width:48rem}
-.focus-grid span{padding:.5rem .65rem;border:1px solid var(--rule);border-radius:.25rem;background:var(--bg-alt);font-size:.86rem}
-.modern-meta{margin-top:1.1rem!important;font-size:.88rem!important;color:var(--text-soft)}
-.modern-actions{margin-top:1rem}
-.modern-portrait-wrap{position:relative}
-.modern-portrait{width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 45%;border-radius:.35rem;border:1px solid var(--rule);display:block;box-shadow:var(--shadow)}
-.credential-chip{position:absolute;left:.45rem;right:.45rem;bottom:.45rem;padding:.42rem .5rem;border:1px solid rgba(255,255,255,.18);border-radius:.25rem;background:rgba(10,20,24,.88);color:#fff;font-size:.68rem;text-align:center;backdrop-filter:blur(6px)}
-.system-card{margin-top:2.6rem;border:1px solid var(--rule);border-radius:.35rem;background:linear-gradient(135deg,var(--bg-alt),var(--bg));overflow:hidden;box-shadow:var(--shadow)}
-.system-card-top{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;padding:1.15rem 1.25rem .9rem}
-.system-kicker{margin:0 0 .3rem;color:var(--accent);font-size:.7rem;font-weight:700;letter-spacing:.13em}
-.system-card h2{border:0;margin:0;padding:0;font-size:1.3rem;font-weight:400}
-.system-frequency{font-size:.72rem;letter-spacing:.1em;color:var(--text-soft);white-space:nowrap}
-.system-image-frame{background:#07131c;padding:.7rem}
-.system-image-frame img{width:100%;display:block;border-radius:.2rem}
-.skill-strip{display:flex;flex-wrap:wrap;gap:.45rem;padding:.85rem 1rem}
-.skill-strip span{font-size:.75rem;color:var(--text-soft);padding:.28rem .55rem;border:1px solid var(--rule);border-radius:1rem}
-.skill-strip b{color:var(--accent);font-weight:600}
-@media (max-width:800px){
-  .modern-intro{grid-template-columns:minmax(0,1fr);gap:1rem}
-  .modern-portrait-wrap{width:8.5rem}
-}
-@media (max-width:600px){
-  .home-modern h1{font-size:2.35rem}
-  .focus-grid{grid-template-columns:minmax(0,1fr)}
-  .system-card-top{display:block}
-  .system-frequency{margin-top:.5rem}
-  .modern-portrait-wrap{width:7.5rem}
-}
-
 </style>
 </head>
 <body>
@@ -284,73 +313,56 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
   
   <main>
 
-    <section id="welcome" class="home-modern">
-      <div class="modern-intro">
-        <div class="intro-copy">
-          <p class="eyebrow">RF &amp; EMBEDDED HARDWARE ENGINEER</p>
-          <h1>Hi, I&rsquo;m <span>Sarah Ouerghemmi</span></h1>
-          <p class="modern-lead">I am an RF and embedded hardware engineer with a doctorate (Dr.-Ing.), based in Leipzig. I design ultra-low-power wireless systems, from the RF circuit to the sensor node it wakes up.</p>
-
-          <div class="intro-profile">
-            <p class="section-label">I am</p>
-            <ul>
-              <li>Associate Researcher at <a href="https://www.htwk-leipzig.de/" target="_blank" rel="noopener">Leipzig University of Applied Sciences</a></li>
-              <li>Doctor of Engineering (Dr.-Ing.) from HTWK Leipzig and <a href="http://www.enetcom.rnu.tn/" target="_blank" rel="noopener">ENET'COM Sfax</a></li>
-              <li>RF and embedded hardware engineer</li>
-              <li>Member of the IEEE</li>
-            </ul>
+    <section id="welcome">
+      <div class="bleed hero-band">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">RF &amp; embedded hardware engineer</p>
+            <h1>Hello, I&rsquo;m <span>Sarah Ouerghemmi</span></h1>
+            <p class="hero-lede">I am an RF and embedded hardware engineer with a doctorate (Dr.-Ing.), based in Leipzig. I design ultra-low-power wireless systems, from the RF circuit to the sensor node it wakes up.</p>
+            <a class="hero-btn" href="projects.html">View my projects
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
 
-          <div class="research-focus">
-            <p class="section-label">My research topics are</p>
-            <div class="focus-grid">
-              <span>Wake-Up Receivers</span>
-              <span>Wireless Sensor Networks</span>
-              <span>Low-Noise Amplifier Design</span>
-              <span>Ultra-Low-Power RF &amp; Embedded Systems</span>
-            </div>
+            <p class="hero-links">Leipzig, Germany &middot; <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a><br><a href="CV_Sarah_Ouerghemmi_EN.pdf">Download CV</a> &middot; <a href="CV_Sarah_Ouerghemmi_DE.pdf" hreflang="de">Lebenslauf auf Deutsch</a> &middot; <a href="cv.html">Full CV</a></p>
           </div>
 
-          <p class="modern-meta">
-            Leipzig, Germany<br>
-            <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a>
-          </p>
-
-          <div class="modern-actions">
-            <a class="btn" href="CV_Sarah_Ouerghemmi_EN.pdf">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3zM5 18h14v2H5z"/></svg>
-              Download CV</a>
-            <a class="btn ghost" href="CV_Sarah_Ouerghemmi_DE.pdf" hreflang="de">Lebenslauf auf Deutsch</a>
-            <a class="btn ghost" href="projects.html">Projects</a>
-            <a class="btn ghost" href="research.html">Research</a>
-          </div>
-        </div>
-
-        <div class="modern-portrait-wrap">
-          <img class="modern-portrait" src="img/portrait.jpg" alt="Portrait of Sarah Ouerghemmi">
-          <div class="credential-chip">Dr.-Ing. · Researcher · IEEE</div>
+          <figure class="hero-figure">
+          <img src="img/hero-overview.webp" alt="Signal path: an RF signal enters a low-noise amplifier, then a wake-up receiver, which wakes the microcontroller of a node in a wireless sensor network. Below: concept, simulation, PCB layout and measurement." width="1600" height="806" fetchpriority="high">
+          <figcaption>From an incoming signal to a node in the field: the amplifier and wake-up receiver I design sit at the front of that chain.</figcaption>
+        </figure>
         </div>
       </div>
 
-      <div class="system-card">
-        <div class="system-card-top">
-          <div>
-            <p class="system-kicker">ONE PICTURE · MY ENGINEERING EXPERTISE</p>
-            <h2>From RF signal to intelligent wireless system</h2>
+      <div class="bleed capstrip">
+        <div class="cap-inner">
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.2"/><path d="M7.5 7.5a6.4 6.4 0 0 0 0 9M16.5 7.5a6.4 6.4 0 0 1 0 9M4.6 4.6a10.5 10.5 0 0 0 0 14.8M19.4 4.6a10.5 10.5 0 0 1 0 14.8"/></svg>
+            <p>RF engineering</p>
           </div>
-          <div class="system-frequency">RF · MCU · SENSOR NETWORK</div>
-        </div>
-        <div class="system-image-frame">
-          <img src="img/hero-system-visual.jpg" alt="RF front end, wake-up receiver, embedded system and wireless sensor network architecture">
-        </div>
-        <div class="skill-strip">
-          <span><b>RF</b> Front Ends</span>
-          <span><b>WUR</b> Wake-Up Receivers</span>
-          <span><b>MCU</b> Embedded Systems</span>
-          <span><b>LP</b> Ultra-Low Power</span>
-          <span><b>WSN</b> Wireless Sensor Networks</span>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10" y="10" width="4" height="4"/><path d="M10 7V4M14 7V4M10 17v3M14 17v3M7 10H4M7 14H4M17 10h3M17 14h3"/></svg>
+            <p>Embedded systems</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="14" height="8" rx="2"/><path d="M20 11v2M6 12h5"/></svg>
+            <p>Low power</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M10.5 6.8 6.4 15.9M13.5 6.8l4.1 9.1M7.2 18h9.6"/></svg>
+            <p>Wireless sensor networks</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5 2.5 9.5 12 14l9.5-4.5z"/><path d="M6 11.5V17c0 1.4 2.7 2.6 6 2.6s6-1.2 6-2.6v-5.5M21.5 9.5V16"/></svg>
+            <p>Dr.-Ing. research</p>
+          </div>
+          <div class="cap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 21.2 12 12 21.2 2.8 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            <p>IEEE member</p>
+          </div>
         </div>
       </div>
+
     </section>
 
   </main>
