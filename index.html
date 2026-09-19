@@ -119,9 +119,14 @@ strong{font-weight:500}
 .layout.plain{padding-top:0;padding-left:0;padding-right:0;max-width:none}
 .bleed{margin-left:calc(50% - 50vw);width:100vw}
 .hero-band{background:linear-gradient(145deg,#0d2d33 0%,#09191d 55%,#0b2228 100%);
-  color:#e9f4f4;padding:3.5rem 0 3.75rem}
-.hero-inner{max-width:64rem;margin:0 auto;padding:0 1.5rem}
-.hero-copy{max-width:44rem}
+  color:#e9f4f4;padding:3.25rem 0 3.5rem}
+.hero-inner{max-width:66rem;margin:0 auto;padding:0 1.5rem;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);
+  gap:3rem;align-items:center}
+.hero-copy{max-width:32rem}
+.hero-links{margin:1.5rem 0 0;font-size:.9rem;color:#8fb6b8}
+.hero-links a{color:#a7cfd0;border-bottom:1px solid rgba(167,207,208,.35)}
+.hero-links a:hover{color:#4fd0c8;border-bottom-color:#4fd0c8;text-decoration:none}
 .eyebrow{margin:0 0 .9rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
 .hero-band h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.12;font-weight:500;margin:0 0 1.25rem;color:#fff}
 .hero-band h1 span{display:block;color:#4fd0c8}
@@ -130,10 +135,10 @@ strong{font-weight:500}
   border:1px solid #4fd0c8;border-radius:2rem;color:#4fd0c8;
   font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
 .hero-btn:hover{background:rgba(79,208,200,.14);text-decoration:none}
-.hero-figure{margin:2.5rem 0 0}
+.hero-figure{margin:0}
 .hero-figure img{width:100%;height:auto;display:block;border-radius:.4rem;
   border:1px solid rgba(255,255,255,.14)}
-.hero-figure figcaption{margin-top:.7rem;font-size:.82rem;color:#8fb6b8}
+.hero-figure figcaption{margin-top:.7rem;font-size:.8rem;color:#8fb6b8}
 .chips{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:0;
   font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:#8fb6b8}
 .chips span{padding:.3rem .7rem;border:1px solid rgba(255,255,255,.18);border-radius:1rem}
@@ -141,6 +146,7 @@ strong{font-weight:500}
 
 /* ---------- capability strip ---------- */
 .capstrip{background:var(--bg-alt);border-bottom:1px solid var(--rule)}
+.layout.plain main{padding-bottom:0}
 .cap-inner{max-width:64rem;margin:0 auto;padding:1.9rem 1.5rem;
   display:grid;grid-template-columns:repeat(6,1fr)}
 .cap{text-align:center;padding:0 .5rem;border-left:1px solid var(--rule)}
@@ -159,6 +165,7 @@ strong{font-weight:500}
 .about-meta{font-size:.92rem;color:var(--text-soft)}
 
 @media (max-width:860px){
+  .hero-inner{grid-template-columns:minmax(0,1fr);gap:2.25rem}
   .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
   .cap:nth-child(4){border-left:0}
 }
@@ -316,12 +323,14 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
 
-        </div>
+            <p class="hero-links">Leipzig, Germany &middot; <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a><br><a href="CV_Sarah_Ouerghemmi_EN.pdf">Download CV</a> &middot; <a href="CV_Sarah_Ouerghemmi_DE.pdf" hreflang="de">Lebenslauf auf Deutsch</a> &middot; <a href="cv.html">Full CV</a></p>
+          </div>
 
-        <figure class="hero-figure">
-          <img src="img/hero-overview.webp" alt="Signal path: an RF signal enters a low-noise amplifier, then a wake-up receiver, which wakes the microcontroller of a node in a wireless sensor network. Below: concept, simulation, PCB layout and measurement." width="1600" height="806">
+          <figure class="hero-figure">
+          <img src="img/hero-overview.webp" alt="Signal path: an RF signal enters a low-noise amplifier, then a wake-up receiver, which wakes the microcontroller of a node in a wireless sensor network. Below: concept, simulation, PCB layout and measurement." width="1600" height="806" fetchpriority="high">
           <figcaption>From an incoming signal to a node in the field: the amplifier and wake-up receiver I design sit at the front of that chain.</figcaption>
         </figure>
+        </div>
       </div>
 
       <div class="bleed capstrip">
@@ -353,21 +362,6 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
         </div>
       </div>
 
-      <div class="about">
-        <img src="img/portrait.jpg" alt="Portrait of Sarah Ouerghemmi" width="520" height="520">
-        <h2>About me</h2>
-        <p>For five years I have been making radios listen for less power. A sensor node normally has to choose between being reachable and lasting a year on a battery; a wake-up receiver removes that choice, and my work is the RF front end that gives it back its range.</p>
-        <p>I work at HTWK Leipzig, where I take designs from concept through ADS simulation and PCB layout to a prototype measured on the bench. I also publish, teach seminars and supervise graduation projects. I am currently looking for a role in industrial R&amp;D or project leadership.</p>
-        <p class="about-meta">Leipzig, Germany<br><a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a></p>
-        <p>
-          <a class="btn" href="CV_Sarah_Ouerghemmi_EN.pdf">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17"><path d="M12 16l-5-5h3V4h4v7h3zM5 18h14v2H5z"/></svg>
-            Download CV</a>
-          <a class="btn ghost" href="CV_Sarah_Ouerghemmi_DE.pdf" hreflang="de">Lebenslauf auf Deutsch</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/dr-ing-sarah-ouerghemmi-baa91950" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn ghost" href="https://scholar.google.com/citations?user=42Q1LtEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        </p>
-      </div>
     </section>
 
   </main>
