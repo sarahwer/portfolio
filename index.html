@@ -116,8 +116,11 @@ strong{font-weight:500}
 
 
 /* ---------- home hero ---------- */
-.layout.plain{padding:0;max-width:none}
-.layout.plain main{padding-bottom:0}
+.layout.plain{padding:0;max-width:none;display:flex;flex-direction:column}
+.layout.plain main{padding-bottom:0;display:flex;flex-direction:column;flex:1 0 auto}
+.layout.plain main > section{display:flex;flex-direction:column;flex:1 0 auto}
+/* any leftover window height is taken by the dark band, not by white space */
+.hero-band{flex:1 0 auto;display:flex;flex-direction:column;justify-content:center}
 .bleed{margin-left:calc(50% - 50vw);width:100vw}
 .hero-band{background:linear-gradient(150deg,#0d2d33 0%,#09191d 60%,#0b2228 100%);
   color:#e9f4f4;padding:3rem 0 3.25rem}
