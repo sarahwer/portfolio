@@ -117,60 +117,67 @@ strong{font-weight:500}
 
 /* ---------- home hero ---------- */
 .layout.plain{padding-top:0;padding-left:0;padding-right:0;max-width:none}
+.layout.plain main{padding-bottom:0}
 .bleed{margin-left:calc(50% - 50vw);width:100vw}
-.hero-band{background:linear-gradient(145deg,#0d2d33 0%,#09191d 55%,#0b2228 100%);
-  color:#e9f4f4;padding:0}
-/* two equal halves across the full window; the picture runs to the right edge */
-.hero-inner{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0}
-.hero-copy{padding:3.5rem 2.5rem 3.5rem max(1.5rem, calc(50vw - 33rem))}
-.hero-links{margin:1.5rem 0 0;font-size:.9rem;color:#8fb6b8}
-.hero-links a{color:#a7cfd0;border-bottom:1px solid rgba(167,207,208,.35)}
-.hero-links a:hover{color:#4fd0c8;border-bottom-color:#4fd0c8;text-decoration:none}
-.eyebrow{margin:0 0 .9rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
-.hero-band h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.12;font-weight:500;margin:0 0 1.25rem;color:#fff}
-.hero-band h1 span{display:block;color:#4fd0c8}
-.hero-lede{color:#b9d1d3;font-size:1.02rem;max-width:30rem;margin:0 0 1.75rem}
-.hero-btn{display:inline-flex;align-items:center;gap:.7rem;padding:.7rem 1.4rem;
-  border:1px solid #4fd0c8;border-radius:2rem;color:#4fd0c8;
-  font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
-.hero-btn:hover{background:rgba(79,208,200,.14);text-decoration:none}
-.hero-figure{margin:0;align-self:stretch;display:flex;align-items:center;
-  padding:1.5rem 0;min-width:0}
-.hero-figure img{width:100%;height:auto;max-height:30rem;object-fit:contain;display:block}
-.hero-figure figcaption{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-.chips{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:0;
-  font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:#8fb6b8}
-.chips span{padding:.3rem .7rem;border:1px solid rgba(255,255,255,.18);border-radius:1rem}
-.chips i{font-style:normal;color:#4fd0c8}
+.hero-band{background:linear-gradient(150deg,#0d2d33 0%,#09191d 60%,#0b2228 100%);
+  color:#e9f4f4;padding:3rem 0 3.25rem}
+.hero-inner{max-width:66rem;margin:0 auto;padding:0 1.5rem;
+  display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:2.75rem;align-items:start}
+.eyebrow{margin:0 0 .75rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
+.hero-band h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.15;font-weight:400;
+  margin:0 0 1.1rem;color:#fff}
+.hero-band h1 span{color:#4fd0c8}
+.hero-lede{color:#b9d1d3;font-size:1rem;max-width:40rem;margin:0}
+.hero-rule{border:0;border-top:1px solid rgba(255,255,255,.14);margin:1.6rem 0}
+.hero-label{margin:0 0 .6rem;font-size:.73rem;letter-spacing:.18em;text-transform:uppercase;color:#79cfc9}
+.iam{list-style:disc;margin:0 0 1.6rem;padding-left:1.15rem;max-width:42rem}
+.iam li{margin-bottom:.35rem;color:#dbe9ea;font-size:.95rem}
+.iam a{color:#4fd0c8}
+.iam a:hover{text-decoration:underline}
+.topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;
+  max-width:42rem;margin:0 0 1.6rem}
+.topics span{border:1px solid rgba(255,255,255,.16);border-radius:.25rem;
+  padding:.65rem .85rem;font-size:.92rem;color:#dbe9ea}
+.hero-links{margin:0 0 1.25rem;font-size:.92rem;color:#8fb6b8;line-height:1.8}
+.hero-links a{color:#4fd0c8}
+.hero-links a:hover{text-decoration:underline}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:0}
+.hbtn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.05rem;
+  border:1px solid rgba(255,255,255,.22);border-radius:.25rem;
+  color:#e9f4f4;font-size:.92rem}
+.hbtn:hover{border-color:#4fd0c8;color:#4fd0c8;text-decoration:none}
+.hbtn.solid{background:#2ec4b6;border-color:#2ec4b6;color:#08201f;font-weight:500}
+.hbtn.solid:hover{background:#4fd0c8;border-color:#4fd0c8;color:#08201f}
+
+.hero-figure-wrap{max-width:66rem;margin:2.75rem auto 0;padding:0 1.5rem}
+.hero-figure-wrap img{width:100%;height:auto;display:block;border-radius:.3rem;
+  border:1px solid rgba(255,255,255,.12)}
+.portrait-card{margin:0;border:1px solid rgba(255,255,255,.18);border-radius:.3rem;
+  padding:.5rem;background:rgba(255,255,255,.03)}
+.portrait-card img{width:100%;height:auto;display:block;border-radius:.2rem}
+.portrait-card figcaption{margin-top:.5rem;padding:.5rem;text-align:center;
+  border:1px solid rgba(255,255,255,.16);border-radius:.2rem;
+  font-size:.74rem;letter-spacing:.06em;color:#a9c9ca}
 
 /* ---------- capability strip ---------- */
 .capstrip{background:var(--bg-alt);border-bottom:1px solid var(--rule)}
-.layout.plain main{padding-bottom:0}
-.cap-inner{max-width:64rem;margin:0 auto;padding:1.9rem 1.5rem;
+.cap-inner{max-width:66rem;margin:0 auto;padding:1.9rem 1.5rem;
   display:grid;grid-template-columns:repeat(6,1fr)}
 .cap{text-align:center;padding:0 .5rem;border-left:1px solid var(--rule)}
 .cap:first-child{border-left:0}
 .cap svg{width:2rem;height:2rem;stroke:var(--accent);fill:none;stroke-width:1.5;
   stroke-linecap:round;stroke-linejoin:round;margin-bottom:.55rem}
-.cap p{margin:0;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--text-soft);max-width:none}
-
-/* ---------- about ---------- */
-.about{max-width:38rem;margin:0 auto;padding:3.5rem 1.5rem 0;text-align:center}
-.about img{width:9.5rem;height:9.5rem;border-radius:50%;object-fit:cover;object-position:50% 45%;
-  border:1px solid var(--rule);display:block;margin:0 auto 1.4rem}
-.about h2{border:0;padding:0;margin:0 0 1rem;font-size:1.35rem}
-.about p{margin-left:auto;margin-right:auto}
-.about .btn{margin:.3rem .25rem}
-.about-meta{font-size:.92rem;color:var(--text-soft)}
+.cap p{margin:0;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--text-soft);max-width:none}
 
 @media (max-width:860px){
-  .hero-inner{grid-template-columns:minmax(0,1fr)}
-  .hero-copy{padding:2.75rem 1.5rem 1.5rem}
-  .hero-figure{padding:0 0 2.5rem}
+  .hero-inner{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .portrait-card{max-width:15rem}
   .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
   .cap:nth-child(4){border-left:0}
 }
-@media (max-width:520px){
+@media (max-width:560px){
+  .topics{grid-template-columns:minmax(0,1fr)}
   .cap-inner{grid-template-columns:repeat(2,1fr)}
   .cap:nth-child(odd){border-left:0}
   .cap:nth-child(4){border-left:1px solid var(--rule)}
@@ -318,19 +325,46 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
         <div class="hero-inner">
           <div class="hero-copy">
             <p class="eyebrow">RF &amp; embedded hardware engineer</p>
-            <h1>Hello, I&rsquo;m <span>Sarah Ouerghemmi</span></h1>
+            <h1>Hi, I&rsquo;m <span>Sarah Ouerghemmi</span></h1>
             <p class="hero-lede">I am an RF and embedded hardware engineer with a doctorate (Dr.-Ing.), based in Leipzig. I design ultra-low-power wireless systems, from the RF circuit to the sensor node it wakes up.</p>
-            <a class="hero-btn" href="projects.html">View my projects
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+
+            <hr class="hero-rule">
+
+            <p class="hero-label">I am</p>
+            <ul class="iam">
+              <li>Associate Researcher at <a href="https://www.htwk-leipzig.de/" target="_blank" rel="noopener">Leipzig University of Applied Sciences</a></li>
+              <li>Doctor of Engineering (Dr.-Ing.) from HTWK Leipzig and <a href="http://www.enetcom.rnu.tn/" target="_blank" rel="noopener">ENET&rsquo;COM Sfax</a></li>
+              <li>RF and embedded hardware engineer</li>
+              <li>Member of the IEEE</li>
+            </ul>
+
+            <p class="hero-label">My research topics are</p>
+            <div class="topics">
+              <span>Wake-Up Receivers</span><span>Wireless Sensor Networks</span><span>Low-Noise Amplifier Design</span><span>Ultra-Low-Power RF &amp; Embedded Systems</span>
+            </div>
+
+            <p class="hero-links">Leipzig, Germany<br>
+              <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a></p>
+
+            <p class="hero-actions">
+              <a class="hbtn solid" href="CV_Sarah_Ouerghemmi_EN.pdf">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3zM5 18h14v2H5z"/></svg>
+                Download CV</a>
+              <a class="hbtn" href="CV_Sarah_Ouerghemmi_DE.pdf" hreflang="de">Lebenslauf auf Deutsch</a>
+              <a class="hbtn" href="projects.html">Projects</a>
+              <a class="hbtn" href="research.html">Research</a>
+            </p>
           </div>
 
-            <p class="hero-links">Leipzig, Germany &middot; <a href="mailto:sarah.ouerghemmi@gmail.com">sarah.ouerghemmi@gmail.com</a><br><a href="CV_Sarah_Ouerghemmi_EN.pdf">Download CV</a> &middot; <a href="CV_Sarah_Ouerghemmi_DE.pdf" hreflang="de">Lebenslauf auf Deutsch</a> &middot; <a href="cv.html">Full CV</a></p>
-          </div>
+          <figure class="portrait-card">
+            <img src="img/portrait.jpg" alt="Portrait of Sarah Ouerghemmi" width="520" height="520" fetchpriority="high">
+            <figcaption>Dr.-Ing. &middot; Researcher &middot; IEEE</figcaption>
+          </figure>
+        </div>
 
-          <figure class="hero-figure">
-          <img src="img/hero-overview.webp" alt="Signal path: an RF signal enters a low-noise amplifier, then a wake-up receiver, which wakes the microcontroller of a node in a wireless sensor network. Below: concept, simulation, PCB layout and measurement." width="1600" height="806" fetchpriority="high">
-          <figcaption>From an incoming signal to a node in the field: the amplifier and wake-up receiver I design sit at the front of that chain.</figcaption>
-        </figure>
+        <div class="hero-figure-wrap">
+          <img src="img/hero-overview.webp" width="1600" height="806" loading="lazy"
+               alt="Signal path: an RF signal enters a low-noise amplifier, then a wake-up receiver, which wakes the microcontroller of a node in a wireless sensor network. Below: concept, simulation, PCB layout and measurement.">
         </div>
       </div>
 
@@ -362,7 +396,6 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           </div>
         </div>
       </div>
-
     </section>
 
   </main>
