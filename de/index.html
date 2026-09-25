@@ -125,7 +125,17 @@ strong{font-weight:500}
 .hero-band{background:linear-gradient(150deg,#0d2d33 0%,#09191d 60%,#0b2228 100%);
   color:#e9f4f4;padding:3rem 0 3.25rem}
 .hero-inner{max-width:66rem;margin:0 auto;padding:0 1.5rem;
-  display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:2.75rem;align-items:start}
+  display:grid;grid-template-columns:minmax(0,1fr) 18rem;gap:2.75rem;align-items:start}
+.avail{display:inline-flex;align-items:center;gap:.55rem;margin:0 0 1.1rem;
+  padding:.32rem .8rem;border:1px solid rgba(79,208,200,.45);border-radius:1rem;
+  font-size:.78rem;letter-spacing:.05em;color:#9fdedb}
+.avail b{width:7px;height:7px;border-radius:50%;background:#4fd0c8;display:block;flex:none}
+.stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;
+  gap:1.25rem 2.25rem;margin:1.6rem 0 0}
+.stats .v{font-size:1.5rem;line-height:1.1;color:#4fd0c8;margin:0}
+.stats .l{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:#8fb6b8;margin:.3rem 0 0}
+@media (max-width:560px){.stats{grid-template-columns:repeat(2,auto);gap:1.1rem 2rem}}
 .eyebrow{margin:0 0 .75rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
 .hero-band h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.15;font-weight:400;
   margin:0 0 1.1rem;color:#fff}
@@ -156,7 +166,7 @@ strong{font-weight:500}
 .hero-figure-wrap img{width:100%;height:auto;display:block;border-radius:.3rem;
   border:1px solid rgba(255,255,255,.12)}
 .portrait-card{margin:0;border:1px solid rgba(255,255,255,.18);border-radius:.3rem;
-  padding:.5rem;background:rgba(255,255,255,.03)}
+  padding:.4rem;background:rgba(255,255,255,.03)}
 .portrait-card img{width:100%;height:auto;display:block;border-radius:.2rem}
 .portrait-card figcaption{margin-top:.5rem;padding:.5rem;text-align:center;
   border:1px solid rgba(255,255,255,.16);border-radius:.2rem;
@@ -175,7 +185,7 @@ strong{font-weight:500}
 
 @media (max-width:860px){
   .hero-inner{grid-template-columns:minmax(0,1fr);gap:2rem}
-  .portrait-card{max-width:15rem}
+  .portrait-card{max-width:18rem}
   .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
   .cap:nth-child(4){border-left:0}
 }
@@ -185,6 +195,34 @@ strong{font-weight:500}
   .cap:nth-child(odd){border-left:0}
   .cap:nth-child(4){border-left:1px solid var(--rule)}
 }
+
+
+/* ---------- skill levels ---------- */
+.skill-legend{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;margin:0 0 1.5rem;
+  font-size:.82rem;color:var(--text-soft)}
+.skill-legend i{display:inline-flex;gap:2px;margin-right:.4rem;vertical-align:middle}
+.skill-legend i b{width:7px;height:5px;border-radius:1px;background:var(--rule);display:block}
+.skill-legend i b.on{background:var(--accent)}
+.skillcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));
+  gap:1.75rem 2.25rem;max-width:52rem;margin:0 0 1.75rem}
+.skillcol h3{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--text-soft);font-weight:500;margin:0 0 .9rem}
+.skill{margin-bottom:.95rem}
+.skill .n{font-size:.93rem}
+.skill .lvl{display:flex;gap:3px;margin:.3rem 0 .15rem;max-width:8rem}
+.skill .lvl b{flex:1;height:5px;border-radius:1px;background:var(--rule)}
+.skill .lvl b.on{background:var(--accent)}
+.skill .ev{font-size:.82rem;color:var(--text-soft)}
+
+
+/* ---------- effort split bars ---------- */
+.split{margin:.9rem 0 .8rem}
+.split .bar{display:flex;height:8px;border-radius:4px;overflow:hidden}
+.split .bar span{display:block;height:8px}
+.split .key{display:flex;flex-wrap:wrap;gap:.3rem 1rem;margin:.55rem 0 0;
+  font-size:.82rem;color:var(--text-soft)}
+.split .key i{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:.4rem}
+.split .cap{margin:.4rem 0 0;font-size:.76rem;color:var(--text-soft);font-style:italic}
 
 /* board gallery */
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
@@ -327,7 +365,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
       <div class="bleed hero-band">
         <div class="hero-inner">
           <div class="hero-copy">
-            <p class="eyebrow">Ingenieurin f&uuml;r HF- und Embedded-Hardware</p>
+            <p class="avail"><b></b>Offen f&uuml;r Positionen in industrieller F&amp;E &middot; sofort verf&uuml;gbar</p>
             <h1>Hallo, ich bin <span>Sarah Ouerghemmi</span></h1>
             <p class="hero-lede">Ich bin promovierte Ingenieurin (Dr.-Ing.) f&uuml;r Hochfrequenz- und Embedded-Hardware in Leipzig. Ich entwickle energiesparende Funksysteme &ndash; von der HF-Schaltung bis zum Sensorknoten, den sie aufweckt.</p>
 
@@ -361,7 +399,6 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
 
           <figure class="portrait-card">
             <img src="../img/portrait.jpg" alt="Portrait von Sarah Ouerghemmi" width="520" height="520" fetchpriority="high">
-            <figcaption>Dr.-Ing. &middot; Forscherin &middot; IEEE</figcaption>
           </figure>
         </div>
 

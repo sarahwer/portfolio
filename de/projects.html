@@ -125,7 +125,17 @@ strong{font-weight:500}
 .hero-band{background:linear-gradient(150deg,#0d2d33 0%,#09191d 60%,#0b2228 100%);
   color:#e9f4f4;padding:3rem 0 3.25rem}
 .hero-inner{max-width:66rem;margin:0 auto;padding:0 1.5rem;
-  display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:2.75rem;align-items:start}
+  display:grid;grid-template-columns:minmax(0,1fr) 18rem;gap:2.75rem;align-items:start}
+.avail{display:inline-flex;align-items:center;gap:.55rem;margin:0 0 1.1rem;
+  padding:.32rem .8rem;border:1px solid rgba(79,208,200,.45);border-radius:1rem;
+  font-size:.78rem;letter-spacing:.05em;color:#9fdedb}
+.avail b{width:7px;height:7px;border-radius:50%;background:#4fd0c8;display:block;flex:none}
+.stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;
+  gap:1.25rem 2.25rem;margin:1.6rem 0 0}
+.stats .v{font-size:1.5rem;line-height:1.1;color:#4fd0c8;margin:0}
+.stats .l{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:#8fb6b8;margin:.3rem 0 0}
+@media (max-width:560px){.stats{grid-template-columns:repeat(2,auto);gap:1.1rem 2rem}}
 .eyebrow{margin:0 0 .75rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
 .hero-band h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.15;font-weight:400;
   margin:0 0 1.1rem;color:#fff}
@@ -156,7 +166,7 @@ strong{font-weight:500}
 .hero-figure-wrap img{width:100%;height:auto;display:block;border-radius:.3rem;
   border:1px solid rgba(255,255,255,.12)}
 .portrait-card{margin:0;border:1px solid rgba(255,255,255,.18);border-radius:.3rem;
-  padding:.5rem;background:rgba(255,255,255,.03)}
+  padding:.4rem;background:rgba(255,255,255,.03)}
 .portrait-card img{width:100%;height:auto;display:block;border-radius:.2rem}
 .portrait-card figcaption{margin-top:.5rem;padding:.5rem;text-align:center;
   border:1px solid rgba(255,255,255,.16);border-radius:.2rem;
@@ -175,7 +185,7 @@ strong{font-weight:500}
 
 @media (max-width:860px){
   .hero-inner{grid-template-columns:minmax(0,1fr);gap:2rem}
-  .portrait-card{max-width:15rem}
+  .portrait-card{max-width:18rem}
   .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
   .cap:nth-child(4){border-left:0}
 }
@@ -205,6 +215,13 @@ strong{font-weight:500}
 .skill .ev{font-size:.82rem;color:var(--text-soft)}
 
 
+.pspec{margin:.95rem 0 0;display:grid;grid-template-columns:5.5rem minmax(0,1fr);
+  gap:.45rem .9rem;font-size:.88rem}
+.pspec dt{color:var(--text-soft);font-size:.72rem;letter-spacing:.13em;
+  text-transform:uppercase;padding-top:.15rem}
+.pspec dd{margin:0}
+@media (max-width:560px){.pspec{grid-template-columns:minmax(0,1fr);gap:.15rem}
+  .pspec dd{margin-bottom:.5rem}}
 /* ---------- effort split bars ---------- */
 .split{margin:.9rem 0 .8rem}
 .split .bar{display:flex;height:8px;border-radius:4px;overflow:hidden}
@@ -382,7 +399,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>HF-Entwurf 45%</span><span><i style="background:#c2622c"></i>Layout 20%</span><span><i style="background:#5b7fb3"></i>Messung 25%</span><span><i style="background:#7a6ea8"></i>Verbundarbeit 10%</span></p>
           <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
         </div>
-        <p class="tags"><span class="tag">HF-Frontend</span><span class="tag">ADS</span><span class="tag">Altium</span><span class="tag">Fusion 360</span><span class="tag">Verbundprojekt</span></p>
+        <dl class="pspec"><dt>Kompetenzen</dt><dd>Entwurf energiesparender LNAs, Anpassnetzwerke zur Detektion sehr schwacher Signale, Rauschzahl- und Empfindlichkeitsbudget, Streckenbudget f&uuml;r Satelliten-Sensor-Verbindungen, kontrollierte 50-&#937;-Leitungsf&uuml;hrung, R&uuml;ckstrompfad- und Referenzlagen-Disziplin; Antennen- und Streckensimulationen mit Studierenden</dd><dt>Werkzeuge</dt><dd>Keysight ADS, Ansys HFSS, Altium Designer, Fusion 360 Electronics, Netzwerkanalysator, Spektrumanalysator, Oszilloskop</dd></dl>
       </div>
 
       <div class="proj">
@@ -404,7 +421,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>HF-Entwurf 40%</span><span><i style="background:#c2622c"></i>Layout 20%</span><span><i style="background:#5b7fb3"></i>Messung 25%</span><span><i style="background:#7a6ea8"></i>Firmware 15%</span></p>
           <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
         </div>
-        <p class="tags"><span class="tag">LNA</span><span class="tag">868 MHz</span><span class="tag">MSP430</span><span class="tag">Leiterplatte</span></p>
+        <dl class="pspec"><dt>Kompetenzen</dt><dd>LNA- und Anpassnetzwerkentwurf bei 868 MHz, Leistungsbudget unter 10 &#181;W, Impedanzkontrolle, Abblockung und Spannungsversorgung, mehrlagiges Mixed-Signal-Layout, Charakterisierung am Messplatz, Protokollszenarien</dd><dt>Werkzeuge</dt><dd>Keysight ADS, Altium Designer, MSP430, hardwarenahes C, Netzwerkanalysator, Spektrumanalysator, Logikanalysator, JTAG/SWD</dd></dl>
         <p><a href="https://www.htwk-leipzig.de/forschen/forschungsprojekte/wakeup-receiver" target="_blank" rel="noopener">Projektseite der HTWK Leipzig</a> &middot; <a href="research.html#publications">zugehörige Veröffentlichungen</a></p>
       </div>
 
@@ -421,7 +438,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>HF-Entwurf 50%</span><span><i style="background:#c2622c"></i>Layout 25%</span><span><i style="background:#5b7fb3"></i>Messung 25%</span></p>
           <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
         </div>
-        <p class="tags"><span class="tag">LNA</span><span class="tag">ADS</span><span class="tag">Altium</span><span class="tag">DAAD-Stipendium</span></p>
+        <dl class="pspec"><dt>Kompetenzen</dt><dd>Transistorcharakterisierung, Impedanzanpassung, Rauschzahloptimierung, kontrollierte 50-&#937;-Leitungsf&uuml;hrung</dd><dt>Werkzeuge</dt><dd>Keysight ADS, Altium Designer, Netzwerkanalysator, Spektrumanalysator</dd></dl>
       </div>
     </section>
 
@@ -440,7 +457,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <li>Vorstellung des Projekts auf internationalen Konferenzen</li>
           <li>Unterstützung von Career-Center-Aktivitäten und Workshops</li>
         </ul>
-        <p class="tags"><span class="tag">DAAD</span><span class="tag">Partnerschaft</span><span class="tag">Veranstaltungen</span></p>
+        <dl class="pspec"><dt>F&auml;higkeiten</dt><dd>Interkulturelle Kommunikation &uuml;ber zwei L&auml;nder und Sprachen hinweg, Koordination der Beteiligten, Veranstaltungs- und Programmmanagement, Vortr&auml;ge auf internationalen Konferenzen, Zusammenarbeit mit Hochschul- und Career-Service-Partnern</dd><dt>Ergebnis</dt><dd>Gemeinsame Veranstaltungen und &Ouml;ffentlichkeitsarbeit beider Hochschulen, Projektvertretung auf Konferenzen, Career-Center-Workshops</dd></dl>
       </div>
 
       <div class="proj">
@@ -450,7 +467,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           Mitarbeit an DAAD-Anträgen, darunter Ta'Ziz und SDG-Initiativen, sowie Vertretung
           der Hochschule auf internationalen Konferenzen.
         </p>
-        <p class="tags"><span class="tag">Antragstellung</span><span class="tag">DAAD</span></p>
+        <dl class="pspec"><dt>F&auml;higkeiten</dt><dd>Fachliches Schreiben f&uuml;r ein nicht spezialisiertes Gutachtergremium, Budgetierung und Arbeitspaketplanung, Abstimmung des Projektumfangs mit Partnern, Einhaltung von Fristen und Formaten der F&ouml;rderer</dd><dt>Ergebnis</dt><dd>Mitarbeit an DAAD-Antr&auml;gen (Ta&rsquo;Ziz, SDG), die Mittel f&uuml;r internationale Projektarbeit sicherten</dd></dl>
       </div>
     </section>
 
@@ -470,7 +487,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>Modell &amp; Training 45%</span><span><i style="background:#c2622c"></i>Anwendungscode 35%</span><span><i style="background:#5b7fb3"></i>Hardwareaufbau 20%</span></p>
           <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
         </div>
-        <p class="tags"><span class="tag">OpenCV</span><span class="tag">CNN</span><span class="tag">TensorFlow / Keras</span><span class="tag">FaceNet</span><span class="tag">Raspberry Pi</span></p>
+        <dl class="pspec"><dt>Kompetenzen</dt><dd>Bildverarbeitungspipeline, Training und Bewertung faltender neuronaler Netze, Inferenz auf eingebetteter Hardware</dd><dt>Werkzeuge</dt><dd>Python, OpenCV, TensorFlow/Keras, FaceNet, Raspberry Pi</dd></dl>
       </div>
 
       <div class="proj">
@@ -486,7 +503,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>Testautomatisierung 45%</span><span><i style="background:#c2622c"></i>Cloud &amp; Server 35%</span><span><i style="background:#5b7fb3"></i>Validierung 20%</span></p>
           <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
         </div>
-        <p class="tags"><span class="tag">TR-069</span><span class="tag">Linux</span><span class="tag">TCP/IP</span><span class="tag">SOAP</span><span class="tag">Jenkins</span></p>
+        <dl class="pspec"><dt>Kompetenzen</dt><dd>Testautomatisierung, Servervirtualisierung, Gateway-Konfiguration und Parameterprovisionierung</dd><dt>Werkzeuge</dt><dd>TR-069, Linux, TCP/IP, XML-RPC, SOAP, Jenkins, Azure</dd></dl>
       </div>
 
       <div class="proj">
@@ -501,7 +518,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>Best&uuml;ckung 50%</span><span><i style="background:#c2622c"></i>Funktionstest 35%</span><span><i style="background:#5b7fb3"></i>Integration 15%</span></p>
           <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
         </div>
-        <p class="tags"><span class="tag">SMD / THT</span><span class="tag">Bestückung</span><span class="tag">Test</span><span class="tag">CPL</span></p>
+        <dl class="pspec"><dt>Kompetenzen</dt><dd>SMD- und THT-Best&uuml;ckung, Funktionstests, CPL-Integration</dd><dt>Werkzeuge</dt><dd>Fertigungspr&uuml;fmittel, optische Inspektion</dd></dl>
       </div>
     </section>
 

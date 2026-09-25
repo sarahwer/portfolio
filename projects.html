@@ -125,7 +125,17 @@ strong{font-weight:500}
 .hero-band{background:linear-gradient(150deg,#0d2d33 0%,#09191d 60%,#0b2228 100%);
   color:#e9f4f4;padding:3rem 0 3.25rem}
 .hero-inner{max-width:66rem;margin:0 auto;padding:0 1.5rem;
-  display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:2.75rem;align-items:start}
+  display:grid;grid-template-columns:minmax(0,1fr) 18rem;gap:2.75rem;align-items:start}
+.avail{display:inline-flex;align-items:center;gap:.55rem;margin:0 0 1.1rem;
+  padding:.32rem .8rem;border:1px solid rgba(79,208,200,.45);border-radius:1rem;
+  font-size:.78rem;letter-spacing:.05em;color:#9fdedb}
+.avail b{width:7px;height:7px;border-radius:50%;background:#4fd0c8;display:block;flex:none}
+.stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;
+  gap:1.25rem 2.25rem;margin:1.6rem 0 0}
+.stats .v{font-size:1.5rem;line-height:1.1;color:#4fd0c8;margin:0}
+.stats .l{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:#8fb6b8;margin:.3rem 0 0}
+@media (max-width:560px){.stats{grid-template-columns:repeat(2,auto);gap:1.1rem 2rem}}
 .eyebrow{margin:0 0 .75rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
 .hero-band h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.15;font-weight:400;
   margin:0 0 1.1rem;color:#fff}
@@ -156,7 +166,7 @@ strong{font-weight:500}
 .hero-figure-wrap img{width:100%;height:auto;display:block;border-radius:.3rem;
   border:1px solid rgba(255,255,255,.12)}
 .portrait-card{margin:0;border:1px solid rgba(255,255,255,.18);border-radius:.3rem;
-  padding:.5rem;background:rgba(255,255,255,.03)}
+  padding:.4rem;background:rgba(255,255,255,.03)}
 .portrait-card img{width:100%;height:auto;display:block;border-radius:.2rem}
 .portrait-card figcaption{margin-top:.5rem;padding:.5rem;text-align:center;
   border:1px solid rgba(255,255,255,.16);border-radius:.2rem;
@@ -175,7 +185,7 @@ strong{font-weight:500}
 
 @media (max-width:860px){
   .hero-inner{grid-template-columns:minmax(0,1fr);gap:2rem}
-  .portrait-card{max-width:15rem}
+  .portrait-card{max-width:18rem}
   .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
   .cap:nth-child(4){border-left:0}
 }
@@ -205,6 +215,13 @@ strong{font-weight:500}
 .skill .ev{font-size:.82rem;color:var(--text-soft)}
 
 
+.pspec{margin:.95rem 0 0;display:grid;grid-template-columns:5.5rem minmax(0,1fr);
+  gap:.45rem .9rem;font-size:.88rem}
+.pspec dt{color:var(--text-soft);font-size:.72rem;letter-spacing:.13em;
+  text-transform:uppercase;padding-top:.15rem}
+.pspec dd{margin:0}
+@media (max-width:560px){.pspec{grid-template-columns:minmax(0,1fr);gap:.15rem}
+  .pspec dd{margin-bottom:.5rem}}
 /* ---------- effort split bars ---------- */
 .split{margin:.9rem 0 .8rem}
 .split .bar{display:flex;height:8px;border-radius:4px;overflow:hidden}
@@ -382,7 +399,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>RF design 45%</span><span><i style="background:#c2622c"></i>PCB layout 20%</span><span><i style="background:#5b7fb3"></i>Measurement 25%</span><span><i style="background:#7a6ea8"></i>Consortium work 10%</span></p>
           <p class="cap">Effort share, estimated</p>
         </div>
-        <p class="tags"><span class="tag">RF front end</span><span class="tag">ADS</span><span class="tag">Altium</span><span class="tag">Fusion 360</span><span class="tag">Consortium</span></p>
+        <dl class="pspec"><dt>Expertise</dt><dd>Ultra-low-power LNA design, matching networks for deep-signal detection, noise figure and sensitivity budgeting, link budget for space-to-sensor paths, controlled 50 &#937; routing, return-path and reference-plane discipline; antenna and link simulations directed with students</dd><dt>Tools</dt><dd>Keysight ADS, Ansys HFSS, Altium Designer, Fusion 360 Electronics, VNA, spectrum analyser, oscilloscope</dd></dl>
       </div>
 
       <div class="proj">
@@ -403,7 +420,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>RF design 40%</span><span><i style="background:#c2622c"></i>PCB layout 20%</span><span><i style="background:#5b7fb3"></i>Measurement 25%</span><span><i style="background:#7a6ea8"></i>Firmware 15%</span></p>
           <p class="cap">Effort share, estimated</p>
         </div>
-        <p class="tags"><span class="tag">LNA</span><span class="tag">868 MHz</span><span class="tag">MSP430</span><span class="tag">PCB</span></p>
+        <dl class="pspec"><dt>Expertise</dt><dd>868 MHz LNA and matching network design, power budget below 10 &#181;W, impedance control, decoupling and rail design, multi-layer mixed-signal layout, bench characterisation, protocol scenarios</dd><dt>Tools</dt><dd>Keysight ADS, Altium Designer, MSP430, bare-metal C, VNA, spectrum analyser, logic analyser, JTAG/SWD</dd></dl>
         <p><a href="https://www.htwk-leipzig.de/forschen/forschungsprojekte/wakeup-receiver" target="_blank" rel="noopener">Project page at HTWK Leipzig</a> · <a href="research.html#publications">related publications</a></p>
       </div>
 
@@ -420,7 +437,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>RF design 50%</span><span><i style="background:#c2622c"></i>PCB layout 25%</span><span><i style="background:#5b7fb3"></i>Measurement 25%</span></p>
           <p class="cap">Effort share, estimated</p>
         </div>
-        <p class="tags"><span class="tag">LNA</span><span class="tag">ADS</span><span class="tag">Altium</span><span class="tag">DAAD scholarship</span></p>
+        <dl class="pspec"><dt>Expertise</dt><dd>Transistor characterisation, impedance matching, noise figure optimisation, controlled 50 &#937; routing</dd><dt>Tools</dt><dd>Keysight ADS, Altium Designer, VNA, spectrum analyser</dd></dl>
       </div>
     </section>
 
@@ -439,7 +456,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <li>Promoted the project at international conferences</li>
           <li>Supported career centre activities and workshops</li>
         </ul>
-        <p class="tags"><span class="tag">DAAD</span><span class="tag">Partnership</span><span class="tag">Events</span></p>
+        <dl class="pspec"><dt>Skills</dt><dd>Intercultural communication across two countries and languages, stakeholder coordination, event and programme management, public speaking at international conferences, working with academic and career-service partners</dd><dt>Delivered</dt><dd>Joint events and outreach between both institutions, project representation at conferences, career centre workshops</dd></dl>
       </div>
 
       <div class="proj">
@@ -449,7 +466,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           Co-prepared DAAD proposals including Ta'Ziz and SDG initiatives, and represented the
           institution at international conferences.
         </p>
-        <p class="tags"><span class="tag">Proposal writing</span><span class="tag">DAAD</span></p>
+        <dl class="pspec"><dt>Skills</dt><dd>Technical writing for a non-specialist review panel, budgeting and work-package planning, negotiating scope with partners, meeting funder deadlines and formats</dd><dt>Delivered</dt><dd>Co-prepared DAAD proposals (Ta&rsquo;Ziz, SDG initiatives) that secured funding for international project work</dd></dl>
       </div>
     </section>
 
@@ -468,7 +485,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>Model &amp; training 45%</span><span><i style="background:#c2622c"></i>Application code 35%</span><span><i style="background:#5b7fb3"></i>Hardware setup 20%</span></p>
           <p class="cap">Effort share, estimated</p>
         </div>
-        <p class="tags"><span class="tag">OpenCV</span><span class="tag">CNN</span><span class="tag">TensorFlow / Keras</span><span class="tag">FaceNet</span><span class="tag">Raspberry Pi</span></p>
+        <dl class="pspec"><dt>Expertise</dt><dd>Computer vision pipeline, CNN training and evaluation, inference on embedded hardware</dd><dt>Tools</dt><dd>Python, OpenCV, TensorFlow/Keras, FaceNet, Raspberry Pi</dd></dl>
       </div>
 
       <div class="proj">
@@ -483,7 +500,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>Test automation 45%</span><span><i style="background:#c2622c"></i>Cloud &amp; servers 35%</span><span><i style="background:#5b7fb3"></i>Validation 20%</span></p>
           <p class="cap">Effort share, estimated</p>
         </div>
-        <p class="tags"><span class="tag">TR-069</span><span class="tag">Linux</span><span class="tag">TCP/IP</span><span class="tag">SOAP</span><span class="tag">Jenkins</span></p>
+        <dl class="pspec"><dt>Expertise</dt><dd>Test automation, server virtualisation, gateway configuration and value provisioning</dd><dt>Tools</dt><dd>TR-069, Linux, TCP/IP, XML-RPC, SOAP, Jenkins, Azure</dd></dl>
       </div>
 
       <div class="proj">
@@ -498,7 +515,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <p class="key"><span><i style="background:#2a8f86"></i>Assembly 50%</span><span><i style="background:#c2622c"></i>Functional test 35%</span><span><i style="background:#5b7fb3"></i>Integration 15%</span></p>
           <p class="cap">Effort share, estimated</p>
         </div>
-        <p class="tags"><span class="tag">SMD / THD</span><span class="tag">PCB assembly</span><span class="tag">Test</span><span class="tag">CPL</span></p>
+        <dl class="pspec"><dt>Expertise</dt><dd>SMD and through-hole assembly, functional testing, powerline (CPL) integration</dd><dt>Tools</dt><dd>Production test equipment, optical inspection</dd></dl>
       </div>
     </section>
 
