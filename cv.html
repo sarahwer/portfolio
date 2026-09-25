@@ -7,15 +7,15 @@
 <meta name="description" content="Experience, skills, education and awards.">
 <meta name="author" content="Sarah Ouerghemmi">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/cv.html">
-<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/cv.html">
-<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/cv.html">
+<link rel="alternate" hreflang="en" href="https://sarahwer.github.io/portfolio/cv.html">
+<link rel="alternate" hreflang="de" href="https://sarahwer.github.io/portfolio/de/cv.html">
+<link rel="alternate" hreflang="x-default" href="https://sarahwer.github.io/portfolio/cv.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:title" content="CV — Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:description" content="Experience, skills, education and awards.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/cv.html">
-<meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
+<meta property="og:url" content="https://sarahwer.github.io/portfolio/cv.html">
+<meta property="og:image" content="https://sarahwer.github.io/portfolio/img/portrait.jpg">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,6 +113,88 @@ strong{font-weight:500}
   object-fit:cover;object-position:50% 45%;border:1px solid var(--rule);display:block}
 .intro-body{flex:1 1 20rem;min-width:0}
 
+
+
+/* ---------- home hero ---------- */
+.layout.plain{padding:0;max-width:none;display:flex;flex-direction:column}
+.layout.plain main{padding-bottom:0;display:flex;flex-direction:column;flex:1 0 auto}
+.layout.plain main > section{display:flex;flex-direction:column;flex:1 0 auto}
+/* any leftover window height is taken by the dark band, not by white space */
+.hero-band{flex:1 0 auto;display:flex;flex-direction:column;justify-content:center}
+.bleed{margin-left:calc(50% - 50vw);width:100vw}
+.hero-band{background:linear-gradient(150deg,#0d2d33 0%,#09191d 60%,#0b2228 100%);
+  color:#e9f4f4;padding:3rem 0 3.25rem}
+.hero-inner{max-width:66rem;margin:0 auto;padding:0 1.5rem;
+  display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:2.75rem;align-items:start}
+.eyebrow{margin:0 0 .75rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
+.hero-band h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.15;font-weight:400;
+  margin:0 0 1.1rem;color:#fff}
+.hero-band h1 span{color:#4fd0c8}
+.hero-lede{color:#b9d1d3;font-size:1rem;max-width:40rem;margin:0}
+.hero-rule{border:0;border-top:1px solid rgba(255,255,255,.14);margin:1.6rem 0}
+.hero-label{margin:0 0 .6rem;font-size:.73rem;letter-spacing:.18em;text-transform:uppercase;color:#79cfc9}
+.iam{list-style:disc;margin:0 0 1.6rem;padding-left:1.15rem;max-width:42rem}
+.iam li{margin-bottom:.35rem;color:#dbe9ea;font-size:.95rem}
+.iam a{color:#4fd0c8}
+.iam a:hover{text-decoration:underline}
+.topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;
+  max-width:42rem;margin:0 0 1.6rem}
+.topics span{border:1px solid rgba(255,255,255,.16);border-radius:.25rem;
+  padding:.65rem .85rem;font-size:.92rem;color:#dbe9ea}
+.hero-links{margin:0 0 1.25rem;font-size:.92rem;color:#8fb6b8;line-height:1.8}
+.hero-links a{color:#4fd0c8}
+.hero-links a:hover{text-decoration:underline}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:0}
+.hbtn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.05rem;
+  border:1px solid rgba(255,255,255,.22);border-radius:.25rem;
+  color:#e9f4f4;font-size:.92rem}
+.hbtn:hover{border-color:#4fd0c8;color:#4fd0c8;text-decoration:none}
+.hbtn.solid{background:#2ec4b6;border-color:#2ec4b6;color:#08201f;font-weight:500}
+.hbtn.solid:hover{background:#4fd0c8;border-color:#4fd0c8;color:#08201f}
+
+.hero-figure-wrap{max-width:66rem;margin:2.75rem auto 0;padding:0 1.5rem}
+.hero-figure-wrap img{width:100%;height:auto;display:block;border-radius:.3rem;
+  border:1px solid rgba(255,255,255,.12)}
+.portrait-card{margin:0;border:1px solid rgba(255,255,255,.18);border-radius:.3rem;
+  padding:.5rem;background:rgba(255,255,255,.03)}
+.portrait-card img{width:100%;height:auto;display:block;border-radius:.2rem}
+.portrait-card figcaption{margin-top:.5rem;padding:.5rem;text-align:center;
+  border:1px solid rgba(255,255,255,.16);border-radius:.2rem;
+  font-size:.74rem;letter-spacing:.06em;color:#a9c9ca}
+
+/* ---------- capability strip ---------- */
+.capstrip{background:var(--bg-alt);border-bottom:0}
+.cap-inner{max-width:66rem;margin:0 auto;padding:1.9rem 1.5rem;
+  display:grid;grid-template-columns:repeat(6,1fr)}
+.cap{text-align:center;padding:0 .5rem;border-left:1px solid var(--rule)}
+.cap:first-child{border-left:0}
+.cap svg{width:2rem;height:2rem;stroke:var(--accent);fill:none;stroke-width:1.5;
+  stroke-linecap:round;stroke-linejoin:round;margin-bottom:.55rem}
+.cap p{margin:0;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--text-soft);max-width:none}
+
+@media (max-width:860px){
+  .hero-inner{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .portrait-card{max-width:15rem}
+  .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
+  .cap:nth-child(4){border-left:0}
+}
+@media (max-width:560px){
+  .topics{grid-template-columns:minmax(0,1fr)}
+  .cap-inner{grid-template-columns:repeat(2,1fr)}
+  .cap:nth-child(odd){border-left:0}
+  .cap:nth-child(4){border-left:1px solid var(--rule)}
+}
+
+/* board gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+  gap:1.75rem 1.5rem;max-width:50rem;margin:1.25rem 0 0}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:auto;display:block;border-radius:.2rem;
+  background:var(--bg-alt);border:1px solid var(--rule)}
+.gallery figcaption{margin-top:.5rem;font-size:.88rem;color:var(--text-soft)}
+.gallery figcaption strong{display:block;color:var(--text);font-weight:500}
+.gallery .wide{grid-column:1 / -1;max-width:34rem}
 
 /* home figure */
 .figure{margin:3rem 0 0}
@@ -364,7 +446,7 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
         <div>
           <h4>Engineering Degree in Electronics &amp; Communication</h4>
           <p class="where">ENET'COM, Sfax, Tunisia</p>
-          <p class="lede">Embedded systems, communication networks and signal processing. Ranked 1st of 60.</p>
+          <p class="lede">Embedded systems, communication networks and signal processing. Ranked 2nd of 60.</p>
         </div>
       </div>
 
