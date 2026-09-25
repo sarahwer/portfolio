@@ -186,6 +186,24 @@ strong{font-weight:500}
   .cap:nth-child(4){border-left:1px solid var(--rule)}
 }
 
+
+/* ---------- skill levels ---------- */
+.skill-legend{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;margin:0 0 1.5rem;
+  font-size:.82rem;color:var(--text-soft)}
+.skill-legend i{display:inline-flex;gap:2px;margin-right:.4rem;vertical-align:middle}
+.skill-legend i b{width:7px;height:5px;border-radius:1px;background:var(--rule);display:block}
+.skill-legend i b.on{background:var(--accent)}
+.skillcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));
+  gap:1.75rem 2.25rem;max-width:52rem;margin:0 0 1.75rem}
+.skillcol h3{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--text-soft);font-weight:500;margin:0 0 .9rem}
+.skill{margin-bottom:.95rem}
+.skill .n{font-size:.93rem}
+.skill .lvl{display:flex;gap:3px;margin:.3rem 0 .15rem;max-width:8rem}
+.skill .lvl b{flex:1;height:5px;border-radius:1px;background:var(--rule)}
+.skill .lvl b.on{background:var(--accent)}
+.skill .ev{font-size:.82rem;color:var(--text-soft)}
+
 /* board gallery */
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
   gap:1.75rem 1.5rem;max-width:50rem;margin:1.25rem 0 0}
@@ -414,19 +432,33 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
 
     <section id="skills">
       <h2>Skills</h2>
-      <table class="skills">
-        <tbody>
-          <tr><th scope="row">RF design</th><td>Ultra-low-power LNA and matching network design, noise figure and sensitivity optimisation, Agilent ADS; full cycle from simulation through schematic and layout to prototype and validation</td></tr>
-          <tr><th scope="row">PCB &amp; schematic</th><td>Altium Designer, Autodesk Fusion 360 Electronics, mixed-signal layout</td></tr>
-          <tr><th scope="row">Lab &amp; test</th><td>VNA, spectrum analyser, oscilloscope, logic analyser, JTAG/SWD debugging</td></tr>
-          <tr><th scope="row">Embedded systems</th><td>MSP430, STM32 (ARM Cortex-M), DSP, Raspberry Pi, FPGA; bare-metal firmware, low-power design, interrupt handling, peripheral drivers (HAL)</td></tr>
-          <tr><th scope="row">Protocols</th><td>UART, SPI, I²C, CAN, TCP/IP, wireless sensor networks</td></tr>
-          <tr><th scope="row">Programming</th><td>C (advanced), C++, Python, Assembly, MATLAB, VHDL and VHDL-AMS</td></tr>
-          <tr><th scope="row">Leadership &amp; delivery</th><td>Student and junior engineer supervision, project planning and weekly reviews, laboratory resource and component management, funding acquisition, international partner coordination, intercultural communication</td></tr>
-          <tr><th scope="row">Methods &amp; tools</th><td>Git and GitHub, Agile, Scrum, UML, Linux</td></tr>
-          <tr><th scope="row">Languages</th><td>Arabic (native), English (fluent, C1), French (fluent, C1), German (intermediate, B1)</td></tr>
-        </tbody>
-      </table>
+      <p class="skill-legend">Levels: <i><b class="on"></b><b></b><b></b><b></b></i>familiar <i><b class="on"></b><b class="on"></b><b></b><b></b></i>working <i><b class="on"></b><b class="on"></b><b class="on"></b><b></b></i>advanced <i><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b></i>expert</p>
+      <div class="skillcols">
+        <div class="skillcol">
+          <h3>RF design</h3>
+        <div class="skill"><p class="n">ADS (Advanced Design System)</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b></div><p class="ev">Five years, every LNA design</p></div>
+        <div class="skill"><p class="n">LNA &amp; matching networks</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b></div><p class="ev">433 and 868 MHz, six publications</p></div>
+        <div class="skill"><p class="n">Noise figure &amp; sensitivity</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b></div><p class="ev">Below 10 µW power budgets</p></div>
+        <div class="skill"><p class="n">Microstrip &amp; lumped matching</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">Front-end boards V1&ndash;V3</p></div>
+        </div>
+        <div class="skillcol">
+          <h3>PCB &amp; laboratory</h3>
+        <div class="skill"><p class="n">Altium Designer</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">Five years, several boards built</p></div>
+        <div class="skill"><p class="n">Fusion 360 Electronics</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">Schematic and layout</p></div>
+        <div class="skill"><p class="n">VNA &amp; spectrum analyser</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">Bench characterisation of every board</p></div>
+        <div class="skill"><p class="n">Oscilloscope, logic analyser</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">Prototype bring-up</p></div>
+        </div>
+        <div class="skillcol">
+          <h3>Embedded &amp; software</h3>
+        <div class="skill"><p class="n">C, bare metal</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">MSP430 measurement benches</p></div>
+        <div class="skill"><p class="n">MSP430</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">Five years, test and protocol scenarios</p></div>
+        <div class="skill"><p class="n">STM32, ARM Cortex-M</p><div class="lvl"><b class="on"></b><b class="on"></b><b></b><b></b></div><p class="ev">Peripheral drivers, low-power modes</p></div>
+        <div class="skill"><p class="n">Python</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">Measurement scripts and data analysis</p></div>
+        <div class="skill"><p class="n">MATLAB, VHDL</p><div class="lvl"><b class="on"></b><b class="on"></b><b></b><b></b></div><p class="ev">Studies and signal processing</p></div>
+        <div class="skill"><p class="n">Git, Linux</p><div class="lvl"><b class="on"></b><b class="on"></b><b class="on"></b><b></b></div><p class="ev">Daily use</p></div>
+        </div>
+      </div>
+      <table class="skills"><tbody><tr><th scope="row">Languages</th><td>Arabic (native), English (fluent, C1), French (fluent, C1), German (intermediate, B1)</td></tr></tbody></table>
     </section>
 
     <section id="education">
