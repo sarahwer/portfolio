@@ -7,15 +7,15 @@
 <meta name="description" content="Forschungsverbünde, Hardware-Entwicklungen und frühere Arbeiten.">
 <meta name="author" content="Sarah Ouerghemmi">
 <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="en" href="https://YOUR-USERNAME.github.io/projects.html">
-<link rel="alternate" hreflang="de" href="https://YOUR-USERNAME.github.io/de/projects.html">
-<link rel="alternate" hreflang="x-default" href="https://YOUR-USERNAME.github.io/projects.html">
+<link rel="alternate" hreflang="en" href="https://sarahwer.github.io/portfolio/projects.html">
+<link rel="alternate" hreflang="de" href="https://sarahwer.github.io/portfolio/de/projects.html">
+<link rel="alternate" hreflang="x-default" href="https://sarahwer.github.io/portfolio/projects.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:title" content="Projekte — Dr.-Ing. Sarah Ouerghemmi">
 <meta property="og:description" content="Forschungsverbünde, Hardware-Entwicklungen und frühere Arbeiten.">
-<meta property="og:url" content="https://YOUR-USERNAME.github.io/de/projects.html">
-<meta property="og:image" content="https://YOUR-USERNAME.github.io/img/portrait.jpg">
+<meta property="og:url" content="https://sarahwer.github.io/portfolio/de/projects.html">
+<meta property="og:image" content="https://sarahwer.github.io/portfolio/img/portrait.jpg">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,6 +113,116 @@ strong{font-weight:500}
   object-fit:cover;object-position:50% 45%;border:1px solid var(--rule);display:block}
 .intro-body{flex:1 1 20rem;min-width:0}
 
+
+
+/* ---------- home hero ---------- */
+.layout.plain{padding:0;max-width:none;display:flex;flex-direction:column}
+.layout.plain main{padding-bottom:0;display:flex;flex-direction:column;flex:1 0 auto}
+.layout.plain main > section{display:flex;flex-direction:column;flex:1 0 auto}
+/* any leftover window height is taken by the dark band, not by white space */
+.hero-band{flex:1 0 auto;display:flex;flex-direction:column;justify-content:center}
+.bleed{margin-left:calc(50% - 50vw);width:100vw}
+.hero-band{background:linear-gradient(150deg,#0d2d33 0%,#09191d 60%,#0b2228 100%);
+  color:#e9f4f4;padding:3rem 0 3.25rem}
+.hero-inner{max-width:66rem;margin:0 auto;padding:0 1.5rem;
+  display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:2.75rem;align-items:start}
+.eyebrow{margin:0 0 .75rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:#79cfc9}
+.hero-band h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.15;font-weight:400;
+  margin:0 0 1.1rem;color:#fff}
+.hero-band h1 span{color:#4fd0c8}
+.hero-lede{color:#b9d1d3;font-size:1rem;max-width:40rem;margin:0}
+.hero-rule{border:0;border-top:1px solid rgba(255,255,255,.14);margin:1.6rem 0}
+.hero-label{margin:0 0 .6rem;font-size:.73rem;letter-spacing:.18em;text-transform:uppercase;color:#79cfc9}
+.iam{list-style:disc;margin:0 0 1.6rem;padding-left:1.15rem;max-width:42rem}
+.iam li{margin-bottom:.35rem;color:#dbe9ea;font-size:.95rem}
+.iam a{color:#4fd0c8}
+.iam a:hover{text-decoration:underline}
+.topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;
+  max-width:42rem;margin:0 0 1.6rem}
+.topics span{border:1px solid rgba(255,255,255,.16);border-radius:.25rem;
+  padding:.65rem .85rem;font-size:.92rem;color:#dbe9ea}
+.hero-links{margin:0 0 1.25rem;font-size:.92rem;color:#8fb6b8;line-height:1.8}
+.hero-links a{color:#4fd0c8}
+.hero-links a:hover{text-decoration:underline}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:0}
+.hbtn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.05rem;
+  border:1px solid rgba(255,255,255,.22);border-radius:.25rem;
+  color:#e9f4f4;font-size:.92rem}
+.hbtn:hover{border-color:#4fd0c8;color:#4fd0c8;text-decoration:none}
+.hbtn.solid{background:#2ec4b6;border-color:#2ec4b6;color:#08201f;font-weight:500}
+.hbtn.solid:hover{background:#4fd0c8;border-color:#4fd0c8;color:#08201f}
+
+.hero-figure-wrap{max-width:66rem;margin:2.75rem auto 0;padding:0 1.5rem}
+.hero-figure-wrap img{width:100%;height:auto;display:block;border-radius:.3rem;
+  border:1px solid rgba(255,255,255,.12)}
+.portrait-card{margin:0;border:1px solid rgba(255,255,255,.18);border-radius:.3rem;
+  padding:.5rem;background:rgba(255,255,255,.03)}
+.portrait-card img{width:100%;height:auto;display:block;border-radius:.2rem}
+.portrait-card figcaption{margin-top:.5rem;padding:.5rem;text-align:center;
+  border:1px solid rgba(255,255,255,.16);border-radius:.2rem;
+  font-size:.74rem;letter-spacing:.06em;color:#a9c9ca}
+
+/* ---------- capability strip ---------- */
+.capstrip{background:var(--bg-alt);border-bottom:0}
+.cap-inner{max-width:66rem;margin:0 auto;padding:1.9rem 1.5rem;
+  display:grid;grid-template-columns:repeat(6,1fr)}
+.cap{text-align:center;padding:0 .5rem;border-left:1px solid var(--rule)}
+.cap:first-child{border-left:0}
+.cap svg{width:2rem;height:2rem;stroke:var(--accent);fill:none;stroke-width:1.5;
+  stroke-linecap:round;stroke-linejoin:round;margin-bottom:.55rem}
+.cap p{margin:0;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--text-soft);max-width:none}
+
+@media (max-width:860px){
+  .hero-inner{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .portrait-card{max-width:15rem}
+  .cap-inner{grid-template-columns:repeat(3,1fr);gap:1.5rem 0}
+  .cap:nth-child(4){border-left:0}
+}
+@media (max-width:560px){
+  .topics{grid-template-columns:minmax(0,1fr)}
+  .cap-inner{grid-template-columns:repeat(2,1fr)}
+  .cap:nth-child(odd){border-left:0}
+  .cap:nth-child(4){border-left:1px solid var(--rule)}
+}
+
+
+/* ---------- skill levels ---------- */
+.skill-legend{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;margin:0 0 1.5rem;
+  font-size:.82rem;color:var(--text-soft)}
+.skill-legend i{display:inline-flex;gap:2px;margin-right:.4rem;vertical-align:middle}
+.skill-legend i b{width:7px;height:5px;border-radius:1px;background:var(--rule);display:block}
+.skill-legend i b.on{background:var(--accent)}
+.skillcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));
+  gap:1.75rem 2.25rem;max-width:52rem;margin:0 0 1.75rem}
+.skillcol h3{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--text-soft);font-weight:500;margin:0 0 .9rem}
+.skill{margin-bottom:.95rem}
+.skill .n{font-size:.93rem}
+.skill .lvl{display:flex;gap:3px;margin:.3rem 0 .15rem;max-width:8rem}
+.skill .lvl b{flex:1;height:5px;border-radius:1px;background:var(--rule)}
+.skill .lvl b.on{background:var(--accent)}
+.skill .ev{font-size:.82rem;color:var(--text-soft)}
+
+
+/* ---------- effort split bars ---------- */
+.split{margin:.9rem 0 .8rem}
+.split .bar{display:flex;height:8px;border-radius:4px;overflow:hidden}
+.split .bar span{display:block;height:8px}
+.split .key{display:flex;flex-wrap:wrap;gap:.3rem 1rem;margin:.55rem 0 0;
+  font-size:.82rem;color:var(--text-soft)}
+.split .key i{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:.4rem}
+.split .cap{margin:.4rem 0 0;font-size:.76rem;color:var(--text-soft);font-style:italic}
+
+/* board gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+  gap:1.75rem 1.5rem;max-width:50rem;margin:1.25rem 0 0}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:auto;display:block;border-radius:.2rem;
+  background:var(--bg-alt);border:1px solid var(--rule)}
+.gallery figcaption{margin-top:.5rem;font-size:.88rem;color:var(--text-soft)}
+.gallery figcaption strong{display:block;color:var(--text);font-weight:500}
+.gallery .wide{grid-column:1 / -1;max-width:34rem}
 
 /* home figure */
 .figure{margin:3rem 0 0}
@@ -267,6 +377,11 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <li>HF-Simulation in ADS und Leiterplatten-Prototyping in Altium Designer und Fusion 360 bis zur Validierung im Labor</li>
           <li>Bereitstellung der Messgrundlage, die das Team für die Doppler-basierte Lokalisierung mit einem einzigen Satelliten nutzte</li>
         </ul>
+                <div class="split">
+          <div class="bar"><span style="width:45%;background:#2a8f86"></span><span style="width:20%;background:#c2622c"></span><span style="width:25%;background:#5b7fb3"></span><span style="width:10%;background:#7a6ea8"></span></div>
+          <p class="key"><span><i style="background:#2a8f86"></i>HF-Entwurf 45%</span><span><i style="background:#c2622c"></i>Layout 20%</span><span><i style="background:#5b7fb3"></i>Messung 25%</span><span><i style="background:#7a6ea8"></i>Verbundarbeit 10%</span></p>
+          <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
+        </div>
         <p class="tags"><span class="tag">HF-Frontend</span><span class="tag">ADS</span><span class="tag">Altium</span><span class="tag">Fusion 360</span><span class="tag">Verbundprojekt</span></p>
       </div>
 
@@ -284,6 +399,11 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           <li>Entwurf von LNA und Anpassnetzwerk bei 868 MHz, Schaltplan und Layout, Aufbau des Prototyps</li>
           <li>Charakterisierung am Messplatz mit MSP430-basiertem Aufbau, einschließlich Protokollszenarien</li>
         </ul>
+                <div class="split">
+          <div class="bar"><span style="width:40%;background:#2a8f86"></span><span style="width:20%;background:#c2622c"></span><span style="width:25%;background:#5b7fb3"></span><span style="width:15%;background:#7a6ea8"></span></div>
+          <p class="key"><span><i style="background:#2a8f86"></i>HF-Entwurf 40%</span><span><i style="background:#c2622c"></i>Layout 20%</span><span><i style="background:#5b7fb3"></i>Messung 25%</span><span><i style="background:#7a6ea8"></i>Firmware 15%</span></p>
+          <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
+        </div>
         <p class="tags"><span class="tag">LNA</span><span class="tag">868 MHz</span><span class="tag">MSP430</span><span class="tag">Leiterplatte</span></p>
         <p><a href="https://www.htwk-leipzig.de/forschen/forschungsprojekte/wakeup-receiver" target="_blank" rel="noopener">Projektseite der HTWK Leipzig</a> &middot; <a href="research.html#publications">zugehörige Veröffentlichungen</a></p>
       </div>
@@ -296,6 +416,11 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           folgte: Transistorcharakterisierung, ADS-Simulation und eine Leiterplattenumsetzung
           in Altium Designer, die Empfindlichkeit und Stromaufnahme gemeinsam verbessern sollte.
         </p>
+                <div class="split">
+          <div class="bar"><span style="width:50%;background:#2a8f86"></span><span style="width:25%;background:#c2622c"></span><span style="width:25%;background:#5b7fb3"></span></div>
+          <p class="key"><span><i style="background:#2a8f86"></i>HF-Entwurf 50%</span><span><i style="background:#c2622c"></i>Layout 25%</span><span><i style="background:#5b7fb3"></i>Messung 25%</span></p>
+          <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
+        </div>
         <p class="tags"><span class="tag">LNA</span><span class="tag">ADS</span><span class="tag">Altium</span><span class="tag">DAAD-Stipendium</span></p>
       </div>
     </section>
@@ -340,6 +465,11 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           einen Überblick über die Mitarbeitenden in den verschiedenen Unternehmensbereichen
           geben sollte, als Prototyp auf einem Raspberry Pi mit Kamera.
         </p>
+                <div class="split">
+          <div class="bar"><span style="width:45%;background:#2a8f86"></span><span style="width:35%;background:#c2622c"></span><span style="width:20%;background:#5b7fb3"></span></div>
+          <p class="key"><span><i style="background:#2a8f86"></i>Modell &amp; Training 45%</span><span><i style="background:#c2622c"></i>Anwendungscode 35%</span><span><i style="background:#5b7fb3"></i>Hardwareaufbau 20%</span></p>
+          <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
+        </div>
         <p class="tags"><span class="tag">OpenCV</span><span class="tag">CNN</span><span class="tag">TensorFlow / Keras</span><span class="tag">FaceNet</span><span class="tag">Raspberry Pi</span></p>
       </div>
 
@@ -351,6 +481,11 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           Konfiguration von Gateways und Provisionierung von Parametern sowie Aufbau eines
           Auto Configuration Servers in der Cloud.
         </p>
+                <div class="split">
+          <div class="bar"><span style="width:45%;background:#2a8f86"></span><span style="width:35%;background:#c2622c"></span><span style="width:20%;background:#5b7fb3"></span></div>
+          <p class="key"><span><i style="background:#2a8f86"></i>Testautomatisierung 45%</span><span><i style="background:#c2622c"></i>Cloud &amp; Server 35%</span><span><i style="background:#5b7fb3"></i>Validierung 20%</span></p>
+          <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
+        </div>
         <p class="tags"><span class="tag">TR-069</span><span class="tag">Linux</span><span class="tag">TCP/IP</span><span class="tag">SOAP</span><span class="tag">Jenkins</span></p>
       </div>
 
@@ -361,6 +496,11 @@ footer{border-top:1px solid var(--rule);background:var(--bg-alt);margin-top:auto
           Arbeit in der Fertigung intelligenter Stromzähler, von der SMD- und
           THT-Leiterplattenbestückung über Funktionstests bis zur CPL-Integration.
         </p>
+                <div class="split">
+          <div class="bar"><span style="width:50%;background:#2a8f86"></span><span style="width:35%;background:#c2622c"></span><span style="width:15%;background:#5b7fb3"></span></div>
+          <p class="key"><span><i style="background:#2a8f86"></i>Best&uuml;ckung 50%</span><span><i style="background:#c2622c"></i>Funktionstest 35%</span><span><i style="background:#5b7fb3"></i>Integration 15%</span></p>
+          <p class="cap">Gesch&auml;tzte Aufwandsverteilung</p>
+        </div>
         <p class="tags"><span class="tag">SMD / THT</span><span class="tag">Bestückung</span><span class="tag">Test</span><span class="tag">CPL</span></p>
       </div>
     </section>
